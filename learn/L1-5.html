@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>L1-5 一分钟看懂行业名词：ADAS、NOA、ODD、接管、MPI 等术语表 · 自动驾驶学堂</title>
+<link rel="stylesheet" href="style.css">
+<style>:root { --stage: #4fd18b; }</style>
+</head>
+<body>
+<nav class="topnav">
+  <a class="brand" href="index.html">AutoPulse<span class="dot"> · </span>自动驾驶学堂</a>
+  <span class="spacer"></span>
+  <a class="nav-link" href="index.html">课程目录</a>
+  <a class="nav-link" href="../index.html">返回首页</a>
+</nav>
+
+<main class="article-wrap">
+  <span class="stage-chip">L1 入门篇</span>
+  <h1 class="article-title"><span class="no">L1-5</span>一分钟看懂行业名词：ADAS、NOA、ODD、接管、MPI 等术语表</h1>
+
+  <div class="meta-row">
+    <span class="meta-chip">难度：<b>入门（可查阅）</b></span>
+    <span class="meta-chip">阅读时间：<b>约 5 分钟</b></span>
+    <span class="meta-chip">前置知识：<b>无（可查阅）</b></span>
+    <span class="meta-chip">关键词：<b>ADAS、NOA、ODD、MPI、接管、Corner Case</b></span>
+  </div>
+
+  <div class="lead">
+    导读：看自动驾驶的报道和评测，最劝退的不是技术，而是缩写——ADAS、NOA、ODD、MPI、OEDR、BEV……每个字母都认识，连起来就懵。这篇不讲原理，只做翻译：27 个高频术语分成四组，每条给你英文全称、中文全称、一句白话解释和它出现的场景。你可以从头读，也可以当词典随查随用。
+  </div>
+
+  <div class="article-body">
+    <div class="analogy">
+      术语表就像新城市的地铁图例：搞懂"换乘""末班车"这些图例，整张图就活了。花几分钟把这页过一遍，之后看任何自动驾驶文章都会顺畅得多。
+    </div>
+
+    <h2>一、基础功能类：车上装的那些"辅助"</h2>
+
+    <h3>ADAS｜Advanced Driver Assistance Systems，高级驾驶辅助系统</h3>
+    <p><b>白话：</b>车上所有"帮你开一点"的功能的统称，从定速巡航到领航辅助都算。<b>出现在：</b>新车配置表、评测文章的开头，注意它包含的功能从 L0 到 L2 都有。</p>
+
+    <h3>ACC｜Adaptive Cruise Control，自适应巡航控制</h3>
+    <p><b>白话：</b>设定好速度和跟车距离，前车快我快、前车慢我慢，堵车时也能自动跟停起步。<b>出现在：</b>高速跟车、堵车蠕行，是 L2 功能最基础的"纵向控制"。</p>
+
+    <h3>AEB｜Autonomous Emergency Braking，自动紧急制动</h3>
+    <p><b>白话：</b>判断马上要撞上了而驾驶员没反应，系统自动帮你踩死刹车。<b>出现在：</b>城市跟车、行人横穿等紧急场景；按 SAE 分级它属于 L0 应急辅助。</p>
+
+    <h3>LKA｜Lane Keeping Assist，车道保持辅助</h3>
+    <p><b>白话：</b>摄像头盯着车道线，方向盘自动微调，让车不出线、稳在车道中间。<b>出现在：</b>高速巡航，与 ACC 组合就是最基础的 L2。</p>
+
+    <h3>NOA｜Navigate on Autopilot，领航辅助驾驶（导航辅助）</h3>
+    <p><b>白话：</b>跟着导航路线自己开：自动跟车、拨杆变道、上下匝道，直到驶出设定路线。<b>出现在：</b>高速和部分城市道路；该叫法源自特斯拉，现泛指各家同类功能，均属 L2。</p>
+
+    <h3>NGP｜Navigation Guided Pilot，智能导航辅助驾驶</h3>
+    <p><b>白话：</b>小鹏汽车对自家领航辅助功能的叫法，能力与 NOA 同类。<b>出现在：</b>小鹏车型的高速与城市领航功能宣传中。</p>
+
+    <h3>NOP｜Navigate on Pilot，领航辅助</h3>
+    <p><b>白话：</b>蔚来汽车对自家领航辅助功能的叫法。<b>出现在：</b>蔚来的高速 / 城区领航功能说明中。NGP、NOP、NOA 本质是同一类功能的不同品牌命名。</p>
+
+    <h3>OTA｜Over-The-Air，空中下载升级</h3>
+    <p><b>白话：</b>像手机升级系统一样，车通过网络更新软件，获得新功能或修复问题。<b>出现在：</b>车企的"常用常新"宣传；注意升级软件不能把 L2 的车变成 L3（见 L1-4）。</p>
+
+    <h2>二、分级责任类：谁开车、谁负责</h2>
+
+    <h3>L2+ / L3｜行业俗称与官方分级</h3>
+    <p><b>白话：</b>"L2+"是厂商说法，意思是"接近 L3 的 L2"；官方分级只有 L0–L5 整数（见 L1-2）。<b>出现在：</b>新车发布会与配置表；判断标准只有一条：责任还在人，就是 L2。</p>
+
+    <h3>ODD｜Operational Design Domain，运行设计域</h3>
+    <p><b>白话：</b>系统"被允许、被设计"工作的条件清单，比如"高速公路、时速低于多少、天气良好"。<b>出现在：</b>法规文件和 L3/L4 的功能说明；超出 ODD 就不属于系统的能力范围。</p>
+
+    <h3>OEDR｜Object and Event Detection and Response，目标和事件检测与响应</h3>
+    <p><b>白话：</b>"看路并做出反应"这件事本身——发现前车刹车、行人窜出并采取行动。<b>出现在：</b>SAE J3016 标准正文；L2 与 L3 的分界正是"谁做 OEDR"（L2 是人，L3 是系统）。</p>
+
+    <h3>DDT｜Dynamic Driving Task，动态驾驶任务</h3>
+    <p><b>白话：</b>开车这件事的全部内容：控制方向、控制速度、观察并响应路况。<b>出现在：</b>分级标准中描述"每一级谁干哪些活"。</p>
+
+    <h3>MRC｜Minimal Risk Condition，最小风险状态（最小风险策略）</h3>
+    <p><b>白话：</b>系统搞不定时的"安全兜底动作"，比如自动减速、靠边停车、打开双闪。<b>出现在：</b>L3/L4 系统的设计要求里，是无人接管时的最后手段。</p>
+
+    <h3>MPI｜Miles Per Intervention，平均接管里程</h3>
+    <p><b>白话：</b>平均开多少公里才需要人工接管（介入）一次，数字越大说明系统越稳。<b>出现在：</b>自动驾驶测试报告与各家路测成绩宣传；注意各家统计口径不同，跨家比较并不可靠。</p>
+
+    <h3>接管｜Takeover / Intervention</h3>
+    <p><b>白话：</b>人把车从系统手里接回来自己开，踩刹车、打方向或按退出键都算。<b>出现在：</b>使用辅助驾驶的全程，以及 L3 系统发出接管请求时。</p>
+
+    <h2>三、技术概念类：看懂技术报道</h2>
+
+    <h3>Corner Case｜极端场景（角落案例）</h3>
+    <p><b>白话：</b>训练和测试中极少遇到、但一旦遇到就很难处理的特殊情况。<b>出现在：</b>技术讨论中，比如"横躺的故障车""高速上逆行的三轮车"。</p>
+
+    <h3>BEV｜Bird's Eye View，鸟瞰视角</h3>
+    <p><b>白话：</b>把多个摄像头的画面拼成一张从天上看下来的"俯视图"，让车掌握全局路况。<b>出现在：</b>感知算法的技术介绍，是近年主流的感知框架之一。</p>
+
+    <h3>OCC｜Occupancy Network，占用网络（占用栅格）</h3>
+    <p><b>白话：</b>把周围空间切成小方块，标记"哪里被占了"，不认识的障碍物也能躲开。<b>出现在：</b>感知技术报道；它的优势正是对付"异形障碍物"（见 L1-4）。</p>
+
+    <h3>端到端｜End-to-End</h3>
+    <p><b>白话：</b>用一个大模型直接完成"从摄像头画面到方向盘指令"的全过程，中间不再人工拆成小步骤。<b>出现在：</b>近两年各家智驾方案的技术路线宣传。</p>
+
+    <h3>世界模型｜World Model</h3>
+    <p><b>白话：</b>让 AI 在"脑内"模拟真实世界的运行规律，从而预测接下来会发生什么。<b>出现在：</b>前沿技术讨论，常与端到端、仿真结合出现，属于研究热点，尚未收敛为统一方案。</p>
+
+    <h3>VLA｜Vision-Language-Action model，视觉-语言-动作模型</h3>
+    <p><b>白话：</b>把"看"（视觉）、"理解"（语言）和"操作"（动作）合进一个模型，让车能理解复杂指令并执行。<b>出现在：</b>2025 年以来的智驾技术路线讨论（截至 2026 年 11 月仍处于快速发展阶段）。</p>
+
+    <h3>算力｜TOPS｜Tera Operations Per Second，每秒万亿次运算</h3>
+    <p><b>白话：</b>车载芯片"算得快不快"的单位，数字越大，能同时处理的感知和决策任务越多。<b>出现在：</b>新车参数表的智驾芯片部分。</p>
+
+    <h2>四、数据研发类：车是怎么"练出来"的</h2>
+    <div class="analogy">
+      系统"练车"就像备考：仿真和影子模式是在家刷题，路测是真上考场，数据闭环是考后整理错题、再复习——刷题、考试、改错题不断循环，"成绩"才会稳步提高。
+    </div>
+
+    <h3>长尾问题｜Long Tail Problem</h3>
+    <p><b>白话：</b>99.9% 的常见路况之外，那 0.1% 罕见但危险的场景，是安全的真正难点。<b>出现在：</b>解释"为什么自动驾驶这么难"时最常用的词。</p>
+
+    <h3>影子模式｜Shadow Mode</h3>
+    <p><b>白话：</b>辅助驾驶在后台默默"做题"但不真的控制车，把它的判断和人的实际操作做对比，用来发现问题场景。<b>出现在：</b>车企的数据采集方案说明中。</p>
+
+    <h3>数据闭环｜Data Closed Loop</h3>
+    <p><b>白话：</b>"车上发现问题 → 数据回传 → 训练改进 → 升级到车"的循环，车越开越聪明的机制。<b>出现在：</b>各家智驾能力迭代速度的讨论里。</p>
+
+    <h3>仿真｜Simulation</h3>
+    <p><b>白话：</b>在电脑里造一条虚拟道路，把千万种场景（含危险场景）让系统反复"跑题"。<b>出现在：</b>研发测试环节；虚拟里程动辄数十亿公里，是真实路测的补充。</p>
+
+    <h3>路测｜Road Test</h3>
+    <p><b>白话：</b>让车真的上路跑，验证系统在真实交通里的表现，通常配有安全员。<b>出现在：</b>自动驾驶公司的运营报告（常与"接管里程 MPI"一起统计）。</p>
+
+    <div class="fig-hint">【此处建议配图：四象限术语导览图——四个分组各一色块，每个色块内列出该组术语的缩写，做成可收藏的"一图版速查表"】</div>
+
+    <div class="concept">
+      <div class="plain"><span class="tag">白话解释</span>这么多词，其实只围绕两件事：车能干多少活（功能），以及干砸了算谁的（责任）。</div>
+      <div class="def"><span class="tag">准确定义</span>术语的权威出处是 SAE J3016（2021 年 4 月修订版）与国家标准 GB/T 40429-2021《汽车驾驶自动化分级》；品牌类缩写（NGP、NOP 等）为各企业命名，不构成分级。</div>
+    </div>
+  </div>
+
+  <div class="summary-box">
+    <h2>本篇小结</h2>
+    <ul>
+      <li>基础功能类（ADAS、ACC、AEB、LKA、NOA 等）说的是"车帮你干什么活"。</li>
+      <li>分级责任类（ODD、OEDR、DDT、MRC、MPI、接管）说的是"谁开车、谁兜底、谁负责"。</li>
+      <li>技术概念类（BEV、OCC、端到端、世界模型、VLA、TOPS）是理解技术报道的关键词。</li>
+      <li>数据研发类（长尾问题、影子模式、数据闭环、仿真、路测）解释系统为什么能越用越好。</li>
+      <li>遇到陌生缩写先查"英文全称 + 中文全称"，再看它属于哪一类，基本就能读懂上下文。</li>
+    </ul>
+  </div>
+
+  <div class="quiz">
+    <h2>自测题</h2>
+    <div class="quiz-item">
+      <div class="q">1.（单选）MPI（平均接管里程）衡量的是什么？</div>
+      <div class="opts">A. 车的油耗水平　B. 平均多少公里需要人工接管一次　C. 电池续航里程　D. 传感器探测距离</div>
+      <details><summary>查看答案</summary><div class="ans">B。MPI 即 Miles Per Intervention，指平均两次人工接管之间行驶的里程，常用来反映系统表现；但各家统计口径不同，跨家比较需谨慎。</div></details>
+    </div>
+    <div class="quiz-item">
+      <div class="q">2.（单选）ODD（运行设计域）指的是：</div>
+      <div class="opts">A. 车辆的保修范围　B. 系统被设计成能正常工作的条件范围（如特定道路、车速、天气）　C. 导航地图的覆盖范围　D. 4S 店的服务区域</div>
+      <details><summary>查看答案</summary><div class="ans">B。ODD 是分级标准中的核心概念，规定了系统作数的条件；超出 ODD 的场景（如下大雨、乡村道路）不属于系统能力范围，需要人来驾驶。</div></details>
+    </div>
+    <div class="quiz-item">
+      <div class="q">3.（判断）"影子模式"是让系统在后台做判断、但不实际控制车辆，用人的实际操作来对比校验。</div>
+      <details><summary>查看答案</summary><div class="ans">正确。影子模式不参与驾驶，只默默"做题"并记录判断与人类驾驶的差异，是车企发现长尾问题、建设数据闭环的重要手段。</div></details>
+    </div>
+  </div>
+
+  <div class="next-box">
+    <h2>延伸阅读</h2>
+    <p>下一篇：<strong>L2-1 车的眼睛</strong>——进入基础篇，从摄像头和雷达开始，逐个拆开自动驾驶的硬件。</p>
+    <ul>
+      <li>SAE International, <em>J3016: Taxonomy and Definitions for Terms Related to Driving Automation Systems for On-Road Motor Vehicles</em>（2021 年 4 月修订版）——DDT、OEDR、ODD、MRC 等术语的权威定义出处</li>
+      <li>国家标准 GB/T 40429-2021《汽车驾驶自动化分级》（2022 年 3 月起实施）——中国官方的分级术语</li>
+      <li>工业和信息化部等四部门《关于开展智能网联汽车准入和上路通行试点工作的通知》（2023 年 11 月）——准入试点中的功能与责任表述</li>
+    </ul>
+    <a class="next-link" href="L2-1.html">继续：L2-1 车的眼睛 →</a>
+  </div>
+
+  <div class="signoff">内容截至 2026-11，重要结论请以最新资料为准。</div>
+</main>
+</body>
+</html>

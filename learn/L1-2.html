@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>L1-2 自动驾驶分级：L0–L5 各级的准确定义和代表功能 · 自动驾驶学堂</title>
+<link rel="stylesheet" href="style.css">
+<style>:root { --stage: #4fd18b; }</style>
+</head>
+<body>
+<nav class="topnav">
+  <a class="brand" href="index.html">AutoPulse<span class="dot"> · </span>自动驾驶学堂</a>
+  <span class="spacer"></span>
+  <a class="nav-link" href="index.html">课程目录</a>
+  <a class="nav-link" href="../index.html">返回首页</a>
+</nav>
+
+<main class="article-wrap">
+  <span class="stage-chip">L1 入门篇</span>
+  <h1 class="article-title"><span class="no">L1-2</span>自动驾驶分级：L0–L5 各级的准确定义和代表功能</h1>
+
+  <div class="meta-row">
+    <span class="meta-chip">难度：<b>入门（零基础）</b></span>
+    <span class="meta-chip">阅读时间：<b>约 7 分钟</b></span>
+    <span class="meta-chip">前置知识：<b>无，建议先读 L1-1</b></span>
+    <span class="meta-chip">关键词：<b>SAE、L0、L2、L3、L5、分级标准</b></span>
+  </div>
+
+  <div class="lead">
+    导读：朋友说"我的车能自动驾驶"，新闻里说"某地跑起了无人驾驶出租车"，广告里又说"L2.999 级智能驾驶"——同样叫"自动驾驶"，说的却可能完全不是一回事。为了解决这种混乱，行业用一套 0 到 5 的分级标准给"车到底能自动到什么程度"立了刻度。这篇带你认识这个刻度：它靠哪三个问题划线，每一级的官方定义、责任归属和代表功能分别是什么，以及"L2+"这类营销说法到底算几级。
+  </div>
+
+  <div class="article-body">
+    <h2>一、为什么需要分级？</h2>
+    <p>先看三个真实存在的产品：定速巡航、今天量产车上的领航辅助驾驶、无人出租车。三者都被叫做"自动驾驶"，但让它们"自己开"的程度天差地别：定速巡航连前车都看不见；领航辅助能自己跟车、自己变道，但出事算司机的；无人出租车里根本没有司机，出了事算运营方的。</p>
+    <p>如果不分级，消费者会被宣传话术误导，监管没法立规矩，出了事故也没法判定责任。<strong>分级标准的作用，就是给"自动"这个词标上刻度</strong>，并且每一级都明确回答一个问题：<em>这辆车开着的时候，到底谁负责？</em></p>
+
+    <div class="analogy">
+      酒店的星级评价就是给"住宿体验"标刻度：同样叫"酒店"，一星级和五星级的差别一目了然，而且星级背后有明确的服务清单。自动驾驶分级就是"驾驶自动化"的星级表——级别不是荣誉，而是能力与责任的清单。
+    </div>
+
+    <h2>二、分级的三个基本问题</h2>
+    <p>现行分级标准的原始出处是国际自动机工程师学会（SAE International）发布的 <strong>J3016</strong> 标准，全称《道路机动车驾驶自动化系统相关术语的分类和定义》（Taxonomy and Definitions for Terms Related to Driving Automation Systems for On-Road Motor Vehicles）。它最早发布于 2014 年，业内引用最多的是 2021 年 4 月修订版；SAE 官网显示 2026 年 9 月又发布了新修订版，重要结论请以标准原文最新版为准。中国对应的国家标准是 GB/T 40429-2021《汽车驾驶自动化分级》（2022 年 3 月起实施），框架与 SAE 一致。</p>
+    <p>顺便澄清一个常见笔误：这份分级标准的正确编号是 <strong>J3016</strong>，网络上常被误写成"J3010"，而 J3010 其实是另一份关于车轮注册与认证的标准，与自动驾驶毫无关系。</p>
+
+    <p>整个分级只看三件事。</p>
+
+    <div class="concept">
+      <div class="plain"><span class="tag">白话解释</span>第一，开车这件事本身（踩油门、打方向）谁干；第二，盯着路况、遇到意外谁兜底；第三，这套系统在什么条件下才作数。</div>
+      <div class="def"><span class="tag">准确定义</span><strong>DDT</strong>（Dynamic Driving Task，动态驾驶任务）：驾驶车辆所需的全部操作与决策，包括横向控制（转向）、纵向控制（加减速）以及对道路上目标和事件的检测与响应（OEDR，Object and Event Detection and Response）。<strong>DDT 后备</strong>（DDT fallback）：系统无法继续执行驾驶任务时的兜底方案，由人接管或由系统自动执行最小风险策略（如靠边停车）。<strong>ODD</strong>（Operational Design Domain，运行设计域）：系统被设计成能正常工作的条件范围，例如"高速公路、车速低于 60 km/h、天气良好"。</div>
+    </div>
+
+    <p>把这三个问题组合起来，就得到 L0 到 L5 六个级别。<strong>分界线其实只有三条</strong>：L2 与 L3 之间，是"谁来盯着路况"的分界线；L3 与 L4 之间，是"要不要留人随时接管"的分界线；L4 与 L5 之间，是"有没有条件限制"的分界线。</p>
+
+    <h2>三、逐级拆解：L0 到 L5</h2>
+
+    <p><strong>L0｜应急辅助。</strong>官方定义要点：系统只在瞬时介入，比如马上要撞上了帮你踩一脚刹车，除此之外 DDT 全部由驾驶员完成。责任归属：<strong>人</strong>。代表功能：AEB（自动紧急制动）、车道偏离预警。你可以把它理解为"最后一秒的提醒或补救"。</p>
+
+    <p><strong>L1｜部分驾驶辅助。</strong>官方定义要点：系统能<em>持续</em>接管横向或纵向控制<em>之一</em>，另一个方向仍归人管。责任归属：<strong>人</strong>。代表功能：单独的自适应巡航 ACC（只管速度）或单独的车道保持 LKA（只管方向）。代表系统：早期的自适应巡航车型即为此级。</p>
+
+    <p><strong>L2｜组合驾驶辅助。</strong>官方定义要点：横向、纵向控制都由系统持续完成，但驾驶员必须<strong>持续监控环境</strong>并随时准备接管——注意，"看路"这件事仍然全归人。责任归属：<strong>人</strong>。代表功能：ACC+车道保持的组合，以及今天的领航辅助（各厂叫 NOA、NGP、NOP 等）。这是截至 2026 年 11 月量产车的绝对主流。</p>
+
+    <p><strong>L3｜有条件自动驾驶。</strong>官方定义要点：在 ODD 内，系统同时负责驾驶和看路（含 OEDR），驾驶员<strong>不必时刻盯着</strong>，但必须在系统请求时接管。责任归属：ODD 内由<strong>系统</strong>承担驾驶责任，驾驶员对"应请求接管"负责。代表系统：奔驰 DRIVE PILOT 是全球首个获合规批准的量产 L3 系统（2021 年底获批，适用于高速公路拥堵缓行等限定条件，初始版本限低速；后续版本的速度上限已放宽，具体参数以官方最新公布为准）。中国自 2023 年 11 月起由工信部等部门推进 L3 准入与上路通行试点（《关于开展智能网联汽车准入和上路通行试点工作的通知》）。</p>
+
+    <p><strong>L4｜高度自动驾驶。</strong>官方定义要点：在 ODD 内系统全程负责，<strong>不期望驾驶员接管</strong>，遇到处理不了的情况由系统自己执行最小风险策略（如靠边停车）。责任归属：<strong>系统 / 运营方</strong>。代表系统：Waymo One（美国）、萝卜快跑（中国武汉等城市）的无人出租车，截至 2026 年 11 月均在限定城市区域内运营——限定区域本身就是它们的 ODD。</p>
+
+    <p><strong>L5｜完全自动驾驶。</strong>官方定义要点：无 ODD 限制，任何道路、任何天气、任何条件下都由系统完成全部驾驶任务，车上可以没有方向盘和踏板。责任归属：<strong>系统</strong>。代表产品：<strong>截至 2026 年 11 月，全球尚无达到 L5 的量产车或公开运营系统</strong>，它目前仍是一个定义上的终点。</p>
+
+    <div class="fig-hint">【此处建议配图：L0–L5 分级对照表，列为"级别 / 官方名称 / 谁开车 / 谁看路 / 责任归属 / 代表功能与车型"，一行一级，配简笔画图标】</div>
+
+    <h2>四、"L2+"、"L2.5" 算几级？（重要澄清）</h2>
+    <p>看车的宣传时你还会遇到"L2+"、"L2.5"、"L2.9"甚至"L2.999"这类说法。<strong>它们都不是官方分级</strong>——J3016 和国标 GB/T 40429-2021 里只有 L0 到 L5 六级，没有小数点。厂商用这些说法想表达的是"我的 L2 比别人的 L2 更强，接近 L3"，但只要驾驶员仍被要求持续监控路况、责任仍在人，它就<strong>还是 L2</strong>。</p>
+
+    <div class="concept">
+      <div class="plain"><span class="tag">白话解释</span>"L2+"就像餐厅自称"准米其林"——听起来很近，但它不是米其林评级。判断一辆车真正属于哪级，只看一句话：<em>开着它的时候，眼睛和责任在谁身上？</em></div>
+      <div class="def"><span class="tag">准确定义</span>官方分级以"驾驶员是否承担目标与事件检测与响应（OEDR）"和"是否期望驾驶员接管"为判据；不满足 L3 条件（系统承担 OEDR、且在 ODD 内不再把驾驶责任托付给驾驶员）的系统，无论功能多强，均归入 L2 及以下。</div>
+    </div>
+
+    <div class="analogy">
+      学驾照时，科目三过了才算能独立上路。"L2+"就像"模拟考分数很高"——分数再高，没过那条线就还是学员，出了事教练（也就是驾驶员自己）担责。
+    </div>
+  </div>
+
+  <div class="summary-box">
+    <h2>本篇小结</h2>
+    <ul>
+      <li>分级标准给"自动驾驶"标刻度，核心是回答：谁开车、谁看路、谁负责。</li>
+      <li>三个关键词：DDT（驾驶操作本身）、DDT 后备（兜底方案）、ODD（系统作数的条件范围）。</li>
+      <li>L0–L2 是"驾驶辅助"，监控路况和责任都在人；L3–L5 才是"自动驾驶"，ODD 内系统负责。</li>
+      <li>代表现状（截至 2026 年 11 月）：L2 是量产主流，L3 小规模落地（奔驰 DRIVE PILOT），L4 在限定区域运营（Waymo、萝卜快跑），L5 尚无实现。</li>
+      <li>"L2+"、"L2.5" 是行业俗称，官方分级没有小数点；责任仍在人的就是 L2。</li>
+    </ul>
+  </div>
+
+  <div class="quiz">
+    <h2>自测题</h2>
+    <div class="quiz-item">
+      <div class="q">1.（单选）使用 L2 级组合驾驶辅助（如领航辅助）时，监控路况、随时接管的责任属于谁？</div>
+      <div class="opts">A. 车辆系统　B. 驾驶员　C. 车企　D. 保险公司</div>
+      <details><summary>查看答案</summary><div class="ans">B。L2 的官方定义是系统只负责横向、纵向控制，目标与事件检测与响应（看路、应急）仍由驾驶员承担，出事时驾驶员负主要责任。</div></details>
+    </div>
+    <div class="quiz-item">
+      <div class="q">2.（单选）L3 与 L2 最本质的区别是什么？</div>
+      <div class="opts">A. L3 的车速更快　B. L3 有激光雷达　C. 在 ODD 内，看路和驾驶的责任从人转移到系统，驾驶员不必时刻盯着　D. L3 可以完全不用人</div>
+      <details><summary>查看答案</summary><div class="ans">C。L2 要求驾驶员持续监控环境；L3 在其运行设计域（ODD）内由系统承担驾驶与环境监控，驾驶员只需在系统请求时接管。D 是 L4/L5 的特征。</div></details>
+    </div>
+    <div class="quiz-item">
+      <div class="q">3.（判断）L5 指的是不限任何道路、天气和条件，全部驾驶任务都由系统完成的级别；截至 2026 年 11 月全球尚无 L5 车辆落地。</div>
+      <details><summary>查看答案</summary><div class="ans">正确。L5 的定义是无运行设计域限制的完全自动驾驶，任何条件下都不需要人接管；目前它仍是定义上的终点，尚无量产或公开运营的 L5 系统。</div></details>
+    </div>
+  </div>
+
+  <div class="next-box">
+    <h2>延伸阅读</h2>
+    <p>下一篇：<strong>L1-3 自动驾驶系统长什么样</strong>——知道了级别，再看看一辆会"自己开"的车里到底装了哪些东西。</p>
+    <ul>
+      <li>SAE International, <em>J3016: Taxonomy and Definitions for Terms Related to Driving Automation Systems for On-Road Motor Vehicles</em>（2021 年 4 月修订版，业内通称"SAE 分级标准"）——L0–L5 分级的原始出处</li>
+      <li>国家标准 GB/T 40429-2021《汽车驾驶自动化分级》（2022 年 3 月起实施）——中国版分级标准，与 SAE 框架一致</li>
+      <li>工业和信息化部等四部门《关于开展智能网联汽车准入和上路通行试点工作的通知》（2023 年 11 月）——中国 L3 准入试点的政策原文</li>
+    </ul>
+    <a class="next-link" href="L1-3.html">继续：L1-3 自动驾驶系统长什么样 →</a>
+  </div>
+
+  <div class="signoff">内容截至 2026-11，重要结论请以最新资料为准。</div>
+</main>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>L1-3 自动驾驶系统长什么样：传感器、大脑、手脚的整体图景 · 自动驾驶学堂</title>
+<link rel="stylesheet" href="style.css">
+<style>:root { --stage: #4fd18b; }</style>
+</head>
+<body>
+<nav class="topnav">
+  <a class="brand" href="index.html">AutoPulse<span class="dot"> · </span>自动驾驶学堂</a>
+  <span class="spacer"></span>
+  <a class="nav-link" href="index.html">课程目录</a>
+  <a class="nav-link" href="../index.html">返回首页</a>
+</nav>
+
+<main class="article-wrap">
+  <span class="stage-chip">L1 入门篇</span>
+  <h1 class="article-title"><span class="no">L1-3</span>自动驾驶系统长什么样：传感器、大脑、手脚的整体图景</h1>
+
+  <div class="meta-row">
+    <span class="meta-chip">难度：<b>入门（零基础）</b></span>
+    <span class="meta-chip">阅读时间：<b>约 7 分钟</b></span>
+    <span class="meta-chip">前置知识：<b>L1-2</b></span>
+    <span class="meta-chip">关键词：<b>传感器、计算平台、感知、决策、执行</b></span>
+  </div>
+
+  <div class="lead">
+    导读：一辆会"自己开"的车，说到底是在模仿一个人开车的全过程：用眼睛和耳朵看路，用大脑判断该怎么开，再用手脚操作方向盘和踏板。车也一样，只不过它的眼睛是摄像头和雷达，大脑是一台装在车里的计算机，手脚是电子控制的转向和刹车。这篇把整车拆成"感知—决策—执行"三段，画出一张整体地图：每一段由哪些部件干活、各有什么特点，以及每一部分该去哪里深入学习。
+  </div>
+
+  <div class="article-body">
+    <h2>一、整体图景：感知 → 决策 → 执行</h2>
+    <p>不管什么级别的自动驾驶，拆开看都是同一条流水线。</p>
+
+    <div class="concept">
+      <div class="plain"><span class="tag">白话解释</span>感知就是"看"——搞清楚周围有什么；决策就是"想"——决定该加速、刹车还是变道；执行就是"做"——把决定变成方向盘和踏板的动作。</div>
+      <div class="def"><span class="tag">准确定义</span><strong>感知</strong>（Perception）：利用传感器采集环境信息并识别其中的目标（车辆、行人、车道线、交通标志等）与状态；<strong>决策</strong>（Decision / Planning）：根据感知结果、导航任务和交通规则，规划车辆的行驶轨迹与速度；<strong>执行</strong>（Control / Actuation）：将规划转化为转向、驱动、制动等具体控制指令并由机械或电子机构完成。</div>
+    </div>
+
+    <p>这条流水线和人开车的过程一一对应，而且分工方式也像：<strong>感知错了，后面全错</strong>——人看错了路况会踩错踏板，车"看"错了也会做错动作。所以自动驾驶系统里，感知环节往往占据了最多的传感器和算力。</p>
+
+    <div class="analogy">
+      蒙着眼睛的厨师做不了菜，哪怕刀工再好。感知就是自动驾驶的"眼睛"，它决定了这辆车"知道什么"；决策是菜谱和火候判断；执行是颠勺翻炒的手艺。三者缺一不可，但最先要解决的永远是看清楚。
+    </div>
+
+    <h2>二、车的眼睛和耳朵：传感器</h2>
+    <p>车上常见的"感官"有四类，各有分工：</p>
+    <ul>
+      <li><strong>摄像头</strong>：像人的眼睛，能分辨颜色和图案，看懂红绿灯、车道线和交通标志；缺点是怕强光和黑夜，也不能直接测准距离。</li>
+      <li><strong>毫米波雷达</strong>：像"回声测距"，靠无线电波测前车的距离和速度，雨雾天也很稳；缺点是看不清物体的形状，可能分不清静止的车和一座桥。</li>
+      <li><strong>激光雷达（LiDAR）</strong>：向四周发射激光测距，直接"画"出周围世界的立体形状，精度到厘米级；缺点是成本较高，大雨大雪时性能会下降。</li>
+      <li><strong>超声波雷达</strong>：探测距离只有几米的"近场感应"，主要用来倒车和自动泊车。</li>
+    </ul>
+    <p>把它们组合起来用，叫<strong>多传感器融合</strong>——一个看不清，另一个补上。各传感器的详细原理见 L2-1 至 L2-3。</p>
+
+    <h2>三、车的大脑：计算平台与软件</h2>
+    <p>传感器送来的是海量的图像和点云数据，需要一台强大的"车载计算机"实时处理：先从数据里认出"前面 30 米有辆车并线"（这一步是感知算法），再决定"我该减速让一让"（决策规划），最后算出方向盘该转几度（控制）。这台计算机称为<strong>计算平台</strong>，衡量它快不快的单位叫 TOPS（每秒万亿次运算），你常在新车参数表里见到它。软件部分则包括感知、预测、规划、控制等一整套算法，今天越来越多的车企还用"端到端"的大模型把它们连成一体。</p>
+    <p>用一个日常比喻：计算平台是"大脑的脑容量和反应速度"，软件是"驾驶技术和经验"。硬件再强，算法不好照样开不好车；反之亦然。深入学习见 L2-7。</p>
+
+    <h2>四、车的手脚：线控底盘</h2>
+    <p>决策做出来了，最后要靠<strong>执行机构</strong>落到位。传统汽车上，方向盘、油门、刹车和踏板之间是机械连接；而自动驾驶需要系统能自己"打方向、踩刹车"，于是有了<strong>线控</strong>技术——把机械连接换成电信号：</p>
+    <ul>
+      <li><strong>线控转向</strong>（Steer-by-Wire）：方向盘的转动变成电信号传给转向电机，方便系统自动转向，也为"可折叠方向盘"留出空间。</li>
+      <li><strong>线控制动</strong>（Brake-by-Wire）：刹车请求以电信号传递，响应更快，是 AEB 自动紧急制动这类功能的基础。</li>
+      <li><strong>线控驱动</strong>：油门（加速）踏板本来就是电信号控制，电机或发动机按指令输出动力。</li>
+    </ul>
+    <p>这些"手脚"直接决定了一辆车能不能平稳、准确地执行系统的决定。深入学习见 L2-5。</p>
+
+    <div class="analogy">
+      老式相机的快门靠一根机械线连着按钮，按下才拍照；现在的数码相机按一下电子键，信号传给芯片处理。线控底盘就是把"机械线"换成"电线"——不仅更听指挥，还更快。
+    </div>
+
+    <h2>五、一条命门：冗余</h2>
+    <p>人开车时，如果方向盘突然失灵，可以靠经验应急；但自动驾驶系统一旦某个部件失效，可能一瞬间就失去控制。所以 L3 以上的系统都要求<strong>冗余</strong>设计。</p>
+
+    <div class="concept">
+      <div class="plain"><span class="tag">白话解释</span>冗余就是"多备一套"：关键部件坏了，备份立刻顶上，车不会突然失能。</div>
+      <div class="def"><span class="tag">准确定义</span>冗余（Redundancy）：为保障功能安全，对关键系统（如转向、制动、供电、通信、传感、计算）配置双套或多套独立通道，任一通道失效时其余通道仍能维持基本驾驶能力或执行最小风险策略。</div>
+    </div>
+
+    <p>常见的冗余包括：双转向电机、双制动控制器、双供电、双计算芯片、两套互为备份的传感器方案。冗余让成本上升不少，但它是"让人敢放手"的技术前提。深入学习见 L3-7。</p>
+
+    <h2>六、把整张地图合起来</h2>
+    <p>现在你有了整车图景：<strong>传感器</strong>（摄像头、雷达、激光雷达、超声波）负责看 → <strong>计算平台 + 软件</strong>负责想 → <strong>线控底盘</strong>负责做，而<strong>冗余</strong>像安全带一样贯穿全程。不同级别的车，区别主要在于这套系统能覆盖多大的场景（ODD）以及"谁来兜底"（见 L1-2）。</p>
+
+    <div class="fig-hint">【此处建议配图：整车传感器与系统布局示意图——车顶激光雷达、前风挡顶部摄像头组、车身四角毫米波雷达、前后保险杠超声波雷达，箭头汇入车内计算平台，再连线到线控转向/驱动/制动，标注"感知→决策→执行"三段】</div>
+  </div>
+
+  <div class="summary-box">
+    <h2>本篇小结</h2>
+    <ul>
+      <li>自动驾驶系统由三段组成：感知（看）、决策（想）、执行（做），对应人开车的全过程。</li>
+      <li>传感器四大件：摄像头看图案、毫米波雷达测速测距、激光雷达测形状、超声波管泊车；组合使用互相补盲。</li>
+      <li>计算平台是"大脑"，以 TOPS 衡量算力；软件是"驾驶技术"，两者缺一不可。</li>
+      <li>线控转向 / 制动 / 驱动是"手脚"，把电信号变成车辆动作。</li>
+      <li>冗余是安全命门：关键部件多备一套，L3 以上系统的必备条件。</li>
+    </ul>
+  </div>
+
+  <div class="quiz">
+    <h2>自测题</h2>
+    <div class="quiz-item">
+      <div class="q">1.（单选）"感知—决策—执行"三段中，负责识别车道线、前车和红绿灯的是哪一段？</div>
+      <div class="opts">A. 感知　B. 决策　C. 执行　D. 冗余</div>
+      <details><summary>查看答案</summary><div class="ans">A。感知是用传感器采集并识别环境信息的环节，看懂车道线、车辆、交通标志都属于感知；决策负责规划轨迹，执行负责操作车辆。</div></details>
+    </div>
+    <div class="quiz-item">
+      <div class="q">2.（单选）以下关于四种传感器的描述，哪项是正确的？</div>
+      <div class="opts">A. 摄像头能精确测距　B. 毫米波雷达怕雨雾　C. 激光雷达用激光测距生成周围环境的立体形状　D. 超声波雷达适合探测几百米外的车</div>
+      <details><summary>查看答案</summary><div class="ans">C。激光雷达通过发射激光测距来"画出"环境形状；摄像头擅长看图案但不擅长直接测距；毫米波雷达恰恰以雨雾天稳定见长；超声波雷达只探测几米内的近距离，用于泊车。</div></details>
+    </div>
+    <div class="quiz-item">
+      <div class="q">3.（判断）冗余的意思是给关键部件（如转向、制动、供电、计算）配置备份，一套失效时另一套能顶上。</div>
+      <details><summary>查看答案</summary><div class="ans">正确。冗余是功能安全的核心手段之一，也是 L3 以上自动驾驶系统的必备设计，目的是避免单点失效导致车辆突然失去控制。</div></details>
+    </div>
+  </div>
+
+  <div class="next-box">
+    <h2>延伸阅读</h2>
+    <p>下一篇：<strong>L1-4 自动驾驶能做什么、不能做什么</strong>——认识了硬件，再看看今天这套系统的能力边界在哪里。</p>
+    <ul>
+      <li>SAE International, <em>J3016: Taxonomy and Definitions for Terms Related to Driving Automation Systems for On-Road Motor Vehicles</em>（2021 年 4 月修订版）——感知、决策、执行在标准中对应"DDT 与 OEDR"的术语框架</li>
+      <li>国家标准 GB 7258《机动车运行安全技术条件》——车辆转向、制动等执行机构的安全技术要求（现行有效版本以国家标准全文公开系统为准）</li>
+    </ul>
+    <a class="next-link" href="L1-4.html">继续：L1-4 能做什么、不能做什么 →</a>
+  </div>
+
+  <div class="signoff">内容截至 2026-11，重要结论请以最新资料为准。</div>
+</main>
+</body>
+</html>

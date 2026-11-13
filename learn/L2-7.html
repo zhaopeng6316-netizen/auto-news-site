@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>L2-7 车上的电脑：芯片、算力、操作系统 · 自动驾驶学堂</title>
+<link rel="stylesheet" href="style.css">
+<style>:root { --stage: #45c4ff; }</style>
+</head>
+<body>
+<nav class="topnav">
+  <a class="brand" href="index.html">AutoPulse<span class="dot"> · </span>自动驾驶学堂</a>
+  <span class="spacer"></span>
+  <a class="nav-link" href="index.html">课程目录</a>
+  <a class="nav-link" href="../index.html">返回首页</a>
+</nav>
+
+<main class="article-wrap">
+  <span class="stage-chip">L2 基础篇</span>
+  <h1 class="article-title"><span class="no">L2-7</span>车上的电脑：芯片、算力、操作系统</h1>
+
+  <div class="meta-row">
+    <span class="meta-chip">难度：<b>基础</b></span>
+    <span class="meta-chip">阅读时间：<b>约 11 分钟</b></span>
+    <span class="meta-chip">前置知识：<b>L2-6</b></span>
+    <span class="meta-chip">关键词：<b>SoC、TOPS、算力、操作系统、域控制器</b></span>
+  </div>
+
+  <div class="lead">
+    导读：上一篇讲了 AI 模型是怎么训练出来的。但训练发生在数据中心，模型最终要"装进"车里才能开车——车上的这套计算硬件和软件，就是车的"大脑"。它和手机、笔记本里的电脑有什么不一样？厂商宣传的"多少 TOPS 算力"是什么意思？为什么车规级芯片比消费级芯片难做得多？这篇从芯片、算力讲到操作系统和整车电子架构，看完你会看懂车厂发布会里那些"算力""域控""舱驾一体"都在说什么。
+  </div>
+
+  <div class="article-body">
+    <h2>一、为什么车需要"电脑"</h2>
+    <p>先算一笔账：一辆高阶智能车上，摄像头可能有十几个，还有毫米波雷达、超声波雷达，甚至激光雷达。这些传感器<strong>每时每刻都在产生数据</strong>，系统必须在几十毫秒内完成"看清周围 → 预测别人要干嘛 → 决定自己怎么走 → 控制刹车转向"这一整套动作。</p>
+    <p>这对计算的要求和消费电子完全不同。手机卡一下，你顶多烦一下；<strong>车在高速上卡一下，可能就是事故</strong>。所以车上的"电脑"必须同时做到三件事：算得快、绝不罢工、出了问题要能兜底。</p>
+    <p>也许有人会问：手机芯片跑分那么高，直接装车上不行吗？除了后面会讲的"车规级"门槛，任务性质也不同：手机应用允许偶尔掉帧、允许你多等一秒；而感知必须和车速"赛跑"——时速 120 公里时，车每秒前进约 33 米，系统晚反应 0.1 秒，就是 3 米多的盲跑距离。所以<strong>延迟</strong>（从"看到"到"做出反应"的时间）和算力同样重要。</p>
+
+    <div class="analogy">
+      车上的计算系统像一个 24 小时值班的调度室：十几路监控画面同时涌入，值班员不仅要全看完，还必须在几秒内下指令，并且整年整月不能打瞌睡。消费级电脑是"用的时候才开机的书房"，车上的电脑是"永远在岗的值班室"。
+    </div>
+
+    <h2>二、芯片的基本构成：CPU、GPU、NPU 与 SoC</h2>
+    <p>车上的计算核心也是芯片，它的内部构成和你电脑里的芯片类似，分工各有侧重：</p>
+    <ul>
+      <li><strong>CPU</strong>（Central Processing Unit，中央处理器）：什么都能干的"全能员工"，擅长复杂的逻辑判断和任务调度；</li>
+      <li><strong>GPU</strong>（Graphics Processing Unit，图形处理器）：靠成千上万个小核心"人海战术"，擅长图像处理和大规模并行计算；</li>
+      <li><strong>NPU</strong>（Neural Processing Unit，神经网络处理器）：专为跑神经网络设计的"专项技师"，做 AI 推理时效率最高。</li>
+    </ul>
+
+    <div class="concept">
+      <div class="plain"><span class="tag">白话解释</span>SoC（System on a Chip，片上系统）就是"把一整台电脑的主要器官做进一颗芯片"：CPU、GPU、NPU、图像处理、各种接口都集成在一起，省空间、省电、速度快。</div>
+      <div class="def"><span class="tag">准确定义</span>SoC（片上系统）是将中央处理器、图形处理器、神经网络加速器、内存接口、通信接口等多种计算与外设模块集成在单一芯片上的系统级芯片，是智能驾驶计算平台的核心器件。</div>
+    </div>
+
+    <p>你可能听说过的一些名字——英伟达 Orin、地平线征程、特斯拉 FSD 芯片、Mobileye EyeQ——本质上都是面向智能驾驶的 SoC。一颗 SoC 加上供电、散热、接口等外围电路，再装进一个金属盒子，就是车上常说的<strong>计算平台</strong>（或"域控制器"的一部分）。</p>
+
+    <h2>三、算力与 TOPS：数字背后的水分</h2>
+    <p>厂商开发布会，最常被举起的数字就是算力。它的单位是 TOPS。</p>
+
+    <div class="concept">
+      <div class="plain"><span class="tag">白话解释</span>TOPS（Tera Operations Per Second，万亿次运算每秒）：这颗芯片每秒能做多少万亿次"算术题"。数字越大，理论上每秒能处理的信息越多。</div>
+      <div class="def"><span class="tag">准确定义</span>TOPS 是衡量芯片 AI 推理能力的单位，表示每秒可执行的万亿次运算数量。它通常指峰值算力，即芯片在理想条件下的最大理论吞吐量。</div>
+    </div>
+
+    <div class="analogy">
+      TOPS 就像发动机的马力：马力大的车理论上跑得快，但实际开起来还看变速箱、车重、调校。同样，TOPS 高只说明芯片"纸面力气大"，实际跑起来还看软件栈、算法优化和数值精度——这一点是行业共识：峰值算力只是参考，实际有效算力往往低于标称值。
+    </div>
+
+    <p>再看几款代表性的芯片（截至 2026 年 11 月公开发布的信息）：</p>
+    <ul>
+      <li><strong>英伟达 Orin / Thor</strong>：Orin 是近年高阶智驾的主流平台之一，单颗公开标称算力约 250 TOPS 量级（以厂商发布为准）；Thor 是其下一代产品，官方口径为更高数量级的算力，具体以厂商发布为准；</li>
+      <li><strong>地平线征程 5 / 征程 6 系列</strong>：中国智驾芯片的代表，征程 5 公开标称 128 TOPS，征程 6 系列覆盖从入门到高阶的多个档位（以厂商发布为准）；</li>
+      <li><strong>特斯拉 FSD 芯片</strong>：特斯拉自研的智驾芯片，采用双芯片冗余设计（HW3.0 起），公开标称算力约百余 TOPS 量级（以厂商发布为准）；</li>
+      <li><strong>Mobileye EyeQ 系列</strong>：以色列 Mobileye 的智驾芯片，从入门辅助驾驶到高阶方案有多档产品，算力从数十到上百 TOPS 量级（以厂商发布为准）。</li>
+    </ul>
+    <p class="data-note">注：以上均为截至 2026 年 11 月的公开发布信息汇总，各家对算力的统计口径（数值精度、是否含稀疏加速等）并不统一，跨厂商直接比较需谨慎，具体数字以各厂商官方发布为准。</p>
+    <p>这里提到了统计口径，其中一个重要细节是<strong>数值精度</strong>：芯片做运算时用的数字位数（常见的如 FP16、INT8）越少，算得越快、越省电，但可能损失一点精度；神经网络通常对这种损失有一定容忍度，所以厂商常以 INT8 精度口径标称 TOPS。这也是不同芯片的数字不能直接相加或硬比的原因之一。</p>
+
+    <h2>四、车规级：为什么车芯难做</h2>
+    <p>把一颗消费级芯片直接装进车里行不行？不行。车内的环境远比书房恶劣：</p>
+    <ul>
+      <li><strong>温度</strong>：夏天暴晒的仪表台、冬天零下的户外，车规级器件通常要求在零下 40 摄氏度到 125 摄氏度左右的范围内可靠工作，而消费级芯片一般只保证室温附近；</li>
+      <li><strong>寿命</strong>：手机两三年就换，车要开十年以上、跑几十万公里，芯片必须"超长待机"；</li>
+      <li><strong>振动与可靠性</strong>：车辆常年颠簸震动，车规级器件对一致性、失效率的要求苛刻得多。</li>
+    </ul>
+    <p>此外还有一个关键概念——功能安全等级。</p>
+
+    <div class="concept">
+      <div class="plain"><span class="tag">白话解释</span>ASIL（Automotive Safety Integrity Level，汽车安全完整性等级）：给汽车电子系统定的"安全考试等级"，从 A 到 D，D 最严。刹车、转向这类"错了就要命"的系统，等级要求最高。</div>
+      <div class="def"><span class="tag">准确定义</span>ASIL 是 ISO 26262《道路车辆功能安全》标准中定义的汽车安全完整性等级，根据危害的严重性、暴露概率和可控性将风险划分为 ASIL A 至 ASIL D 四级（D 为最高），用于规定系统在失效时必须满足的安全要求。ASIL 的深入内容见 L3-7。</div>
+    </div>
+
+    <h2>五、操作系统与中间件：车里的软件底座</h2>
+    <p>光有芯片还不够，芯片上得跑软件。车上的软件大致分两摊：</p>
+    <ul>
+      <li><strong>车控（车辆控制）</strong>：管刹车、转向、电机这些"动手动脚"的活儿，要求<strong>实时性</strong>——指令必须在确定的时限内完成，不能"大概马上"。这类系统常用实时操作系统，如 QNX（黑莓旗下的微内核实时操作系统，其安全版本有通过 ASIL D 认证的产品）、AUTOSAR Classic 平台（汽车开放系统架构的经典平台，由 AUTOSAR 联盟制定的行业标准软件架构）等；</li>
+      <li><strong>智驾与座舱</strong>：管感知、规划、大屏交互这些"算得多"的活儿，常用 Linux（包括加了实时补丁的版本）、QNX，座舱领域还有 Android Automotive（谷歌面向车机的安卓版本）等。</li>
+    </ul>
+    <p>在操作系统之上，还有一层<strong>中间件</strong>（Middleware）：它像"软件的调度员"，负责各个功能模块之间收发数据、协调配合。行业常见的有 AUTOSAR Adaptive 平台、DDS（数据分发服务）等，研发阶段也常见 ROS 2（机器人操作系统，常用于原型开发）。需要说明的是，不同厂商的技术选型差异很大，这里是事实层面的罗列，不构成优劣判断。</p>
+
+    <div class="analogy">
+      如果把计算平台比作一家餐厅：芯片是厨房设备，操作系统是后厨管理章程（什么时候必须上菜、谁听谁的），中间件是传菜系统（把做好的菜准确送到每张桌子）。菜做得再快，传错了桌也白搭——所以中间件这种"看不见的软件"同样关键。
+    </div>
+
+    <h2>六、从域控制器到中央计算：架构在怎么变</h2>
+    <p>过去一辆车上有几十上百个各自为政的小电脑（ECU，电子控制单元），一个功能一个盒子，线束绕得像蛛网。后来行业把功能相近的 ECU 合并成几个<strong>域控制器</strong>（Domain Controller）——比如动力域、底盘域、座舱域、智驾域，一个域控制器统管一摊事。</p>
+    <p>再往后是<strong>中央计算</strong>和<strong>舱驾一体</strong>：把座舱和智驾这些"重活"合并到一个（或一套）高算力计算平台上，配上按位置划分的区域控制器。截至 2026 年 11 月，多家车企和芯片厂商已发布或规划这类中央计算架构方案，这是行业公认的演进方向之一，但各家的具体形态、节奏并不相同，以厂商发布为准。</p>
+    <p>这么做的好处很实在：<strong>线束更短、成本更低、软件可以整车统一升级</strong>。坏处也明显：计算高度集中后，一个平台出问题影响面更大，对功能安全和可靠性的要求反而更高了。</p>
+    <p>顺带一提<strong>OTA</strong>（Over-The-Air，空中下载升级）：架构集中、软件分层清晰的车，可以像手机一样通过网络推送新版本——修 bug、加功能，甚至提升智驾能力。截至 2026 年 11 月，OTA 已是新车的常见配置；但涉及刹车、转向等安全功能的升级，监管上仍有严格的测试与备案要求，不能像手机 App 一样说更就更。</p>
+
+    <div class="fig-hint">【此处建议配图：电子架构演进示意图——左：分布式 ECU（车身上散布很多小盒子、线束密集）；中：域控制器架构（几个大方块分别标注动力/底盘/座舱/智驾域）；右：中央计算 + 区域控制器（一个中央计算单元 + 车身前后左右几个区域控制器）】</div>
+  </div>
+
+  <div class="summary-box">
+    <h2>本篇小结</h2>
+    <ul>
+      <li>车上的"电脑"要同时满足算得快、不罢工、能兜底，要求远高于消费电子。</li>
+      <li>智驾 SoC 把 CPU、GPU、NPU 等集成到一颗芯片上；TOPS 是峰值算力参考，实际效率还看软件与算法，跨厂商比较需谨慎。</li>
+      <li>车规级意味着宽温、长寿命、高可靠，安全关键系统还要满足 ISO 26262 的 ASIL 等级要求。</li>
+      <li>软件底座分车控（实时操作系统如 QNX、AUTOSAR Classic）和智驾/座舱（Linux、Android Automotive 等），中间件负责模块间协作。</li>
+      <li>截至 2026 年 11 月，整车电子架构正从分布式 ECU 走向域控制器、再走向中央计算 + 区域控制。</li>
+    </ul>
+  </div>
+
+  <div class="quiz">
+    <h2>自测题</h2>
+    <div class="quiz-item">
+      <div class="q">1.（单选）TOPS 衡量的是什么？</div>
+      <div class="opts">A. 网络传输速度　B. 每秒万亿次运算的峰值算力　C. 芯片存储容量　D. 屏幕刷新率</div>
+      <details><summary>查看答案</summary><div class="ans">B。TOPS（Tera Operations Per Second）表示每秒可执行的万亿次运算数量，是芯片 AI 推理峰值算力的单位，但只是参考值，实际效率还取决于软件与算法。</div></details>
+    </div>
+    <div class="quiz-item">
+      <div class="q">2.（判断）"车规级"主要指芯片跑分高、性能强。</div>
+      <details><summary>查看答案</summary><div class="ans">错误。"车规级"指满足车载环境的严苛要求：宽温度范围（约零下 40 摄氏度至 125 摄氏度）、十年以上寿命、抗振动、高可靠性等，与跑分高低是两回事。</div></details>
+    </div>
+    <div class="quiz-item">
+      <div class="q">3.（单选）关于 SoC，下面哪个说法是白话解释的正确版本？</div>
+      <div class="opts">A. 一种车用电池管理系统　B. 把 CPU、GPU、NPU 等主要计算部件集成到一颗芯片上的"片上系统"　C. 云端数据服务中心　D. 一种操作系统</div>
+      <details><summary>查看答案</summary><div class="ans">B。SoC（System on a Chip，片上系统）把一整台计算机的主要器官做进一颗芯片，省空间、省电、速度快，是智驾计算平台的核心。</div></details>
+    </div>
+  </div>
+
+  <div class="next-box">
+    <h2>延伸阅读</h2>
+    <p>下一篇：<strong>L3-1 视觉感知进阶</strong>——硬件就位了，下一篇进入进阶篇，看车上的摄像头是怎么"看懂"画面的：从像素到物体，感知的门道比想象的深。</p>
+    <ul>
+      <li>ISO 26262:2011 <em>Road vehicles — Functional safety</em>（含 Part 11 半导体应用指南）——功能安全与 ASIL 等级的原始出处</li>
+      <li>AUTOSAR 联盟《AUTOSAR Classic / Adaptive Platform》官方规范——汽车软件架构的行业标准</li>
+      <li>ISO/SAE 21434:2021 <em>Road vehicles — Cybersecurity engineering</em>——车辆网络安全工程标准</li>
+    </ul>
+    <a class="next-link" href="L3-1.html">继续：L3-1 视觉感知进阶 →</a>
+  </div>
+
+  <div class="signoff">内容截至 2026-11，重要结论请以最新资料为准。</div>
+</main>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>L1-1 什么是自动驾驶：从定速巡航到完全自动驾驶 · 自动驾驶学堂</title>
+<link rel="stylesheet" href="style.css">
+<style>:root { --stage: #4fd18b; }</style>
+</head>
+<body>
+<nav class="topnav">
+  <a class="brand" href="index.html">AutoPulse<span class="dot"> · </span>自动驾驶学堂</a>
+  <span class="spacer"></span>
+  <a class="nav-link" href="index.html">课程目录</a>
+  <a class="nav-link" href="../index.html">返回首页</a>
+</nav>
+
+<main class="article-wrap">
+  <span class="stage-chip">L1 入门篇</span>
+  <h1 class="article-title"><span class="no">L1-1</span>什么是自动驾驶：从定速巡航到完全自动驾驶</h1>
+
+  <div class="meta-row">
+    <span class="meta-chip">难度：<b>入门（零基础）</b></span>
+    <span class="meta-chip">阅读时间：<b>约 6 分钟</b></span>
+    <span class="meta-chip">前置知识：<b>无</b></span>
+    <span class="meta-chip">关键词：<b>自动驾驶、辅助驾驶、定速巡航、ADAS</b></span>
+  </div>
+
+  <div class="lead">
+    导读：很多人第一次听说"自动驾驶"，是从特斯拉的新闻或者某次堵车时朋友说的"这车能自己开"。但"自动驾驶"其实不是一个开关，而是一条从"车帮你一点"到"车全权负责"的长坡道。这篇会把这条坡道画出来：它从最普通的定速巡航开始，到今天量产车上的组合辅助驾驶，再到科幻感十足的无人出租车。看完你会知道：今天路上跑的车到底"自动"到什么程度，以及为什么最后那一段坡道爬了这么久。
+  </div>
+
+  <div class="article-body">
+    <h2>一、先看一个场景：高速上的右脚</h2>
+    <p>开长途高速时，你的右脚要一直踩着油门，时间长了又酸又累。于是工程师最早做的第一件事，就是<strong>把右脚解放出来</strong>——这就是定速巡航。</p>
+
+    <div class="concept">
+      <div class="plain"><span class="tag">白话解释</span>定速巡航就是：你设好一个速度（比如 100 km/h），车就自己保持这个速度跑，脚不用踩油门。</div>
+      <div class="def"><span class="tag">准确定义</span>定速巡航（Cruise Control, CC）是一种车速控制系统，驾驶员设定目标车速后，系统自动维持该车速行驶，驾驶员可随时通过刹车或按键取消。注意：它<strong>不看路</strong>，前方有慢车不会自动减速。</div>
+    </div>
+
+    <p>再往后，工程师让车<strong>学会看前车</strong>：前车慢我就慢，前车走我就走。这就是自适应巡航（ACC）。接着，让车<strong>学会看车道线</strong>：方向盘自己微调，车保持在车道中间，这是车道保持辅助（LKA）。把这些能力拼在一起，再配上自动变道、上下匝道，就是今天很多新车宣传的<strong>"领航辅助驾驶"</strong>（俗称 NOA、NOA、NGP 等，各家叫法不同）。</p>
+
+    <p>你发现了吗？这条线上每一步，都是在做同一件事：<em>把开车这件事一点一点从人手里接过去</em>。而"自动驾驶"，就是这条线的总称——至少在广义上是这样。</p>
+
+    <div class="fig-hint">【此处建议配图：一条从左到右的"驾驶自动化坡道"示意图，从定速巡航 → ACC → 车道保持 → 领航辅助 → 有条件自动驾驶 → 完全自动驾驶】</div>
+
+    <h2>二、"自动驾驶"的两种意思（重点）</h2>
+    <p>日常聊天里说的"自动驾驶"和行业标准里说的"自动驾驶"，不是一个意思，这也是很多误解的来源。</p>
+
+    <p><strong>广义上</strong>，它指整条技术坡道：任何"车能自己开一段"的技术都算。<strong>狭义上</strong>，按照国际自动机工程师学会（SAE）的 J3016 标准（2021 年 4 月修订版），"自动驾驶"严格指<strong>系统全程负责驾驶</strong>的那几级——也就是 L4 和 L5。而今天量产车上最常见的 L2，官方名称叫<strong>"驾驶辅助"</strong>，意思是"车帮忙，但你必须全程盯着"。</p>
+
+    <div class="concept">
+      <div class="plain"><span class="tag">白话解释</span>辅助驾驶 = 车帮你分担，但你是老板，出事你负责；自动驾驶（狭义） = 车是老板，它开车它负责。</div>
+      <div class="def"><span class="tag">准确定义</span>驾驶辅助（L0–L2）：系统可持续执行部分驾驶任务，但<strong>驾驶环境监控与安全兜底由驾驶员承担</strong>。自动驾驶（L3–L5）：系统在其设计运行范围内承担驾驶任务与环境监控（L3 要求驾驶员可应请求接管，L4/L5 不要求）。</div>
+    </div>
+
+    <div class="analogy">
+      家里的自动空调会自己调温度，但没人会说家里"全自动"了——因为打扫、做饭、关窗还是人的事。今天的 L2 辅助驾驶也一样：它自己跟车、自己保持车道，但观察路况、随时接管，还是你的事。
+    </div>
+
+    <h2>三、为什么最后一段坡道爬了这么久？</h2>
+    <p>从"帮你开"到"替你开"，难点不在让车开得好，而在让车<em>在任何情况下都不会出错</em>。人类司机每天遇到的路况里，有大量罕见但致命的场景：横穿高速的行人、施工路段摆出的诡异锥桶、被大风吹倒的树。行业里管这类罕见场景叫"长尾问题"——百分之九十九点九的情况车都能处理，但剩下那百分之零点一，恰恰是安全的关键。</p>
+    <p>除了技术，还有两道现实门槛：<strong>责任怎么划分</strong>（车开的出了事算谁的）和<strong>法规允不允许</strong>（很多地方的法律还写着"驾驶员必须控制车辆"）。所以自动驾驶的落地，从来不只是技术问题。</p>
+
+    <h2>四、现在爬到哪了？（数据截至 2026 年 11 月）</h2>
+    <ul>
+      <li><strong>量产主流是 L2 / L2+ 组合辅助驾驶</strong>：中国市场乘用车新车中 L2 级辅助驾驶的渗透率已过半（各月度统计口径不一，以中国汽车工业协会等机构最新月度数据为准），但它们全部属于"辅助"，驾驶员必须全程监管。</li>
+      <li><strong>L3 开始小规模落地</strong>：奔驰 DRIVE PILOT 是全球首个拿到国际标准 L3 认证的量产系统（有条件、低速、特定场景），中国也在 2023 年起推进 L3 准入试点（工信部等四部门通知，2023 年 11 月）。</li>
+      <li><strong>L4 在限定区域运营</strong>：Waymo（美国）、萝卜快跑（中国武汉等城市）的无人出租车已经在特定城市区域载客，但换个城市、换个天气就未必能跑——这就叫"限定运行范围"。</li>
+    </ul>
+    <p class="data-note">注：以上渗透率与落地信息为截至 2026 年 11 月的公开报道汇总，具体数字请以中国汽车工业协会、乘联会及各国监管机构最新发布为准。</p>
+
+    <div class="fig-hint">【此处建议配图：四格实景图——①定速巡航按键 ②车内屏显示 ACC 跟车 ③L3 场景方向盘脱手提示 ④Robotaxi 无人车内空无一人】</div>
+  </div>
+
+  <div class="summary-box">
+    <h2>本篇小结</h2>
+    <ul>
+      <li>自动驾驶不是开关，是一条从定速巡航到完全自动驾驶的连续坡道。</li>
+      <li>广义的"自动驾驶"是整条坡道；狭义（SAE 标准）专指 L4/L5，今天主流的 L2 官方叫"驾驶辅助"。</li>
+      <li>辅助驾驶阶段，监控路况和安全兜底始终是驾驶员的责任。</li>
+      <li>难点在罕见路况（长尾问题），以及责任划分与法规。</li>
+      <li>截至 2026 年 11 月：L2 是量产主流，L3 小规模落地，L4 在限定区域运营。</li>
+    </ul>
+  </div>
+
+  <div class="quiz">
+    <h2>自测题</h2>
+    <div class="quiz-item">
+      <div class="q">1.（单选）按照 SAE 标准，以下哪项属于狭义的"自动驾驶"？</div>
+      <div class="opts">A. 自适应巡航 ACC　B. 车道保持辅助 LKA　C. 限定场景下系统全程驾驶的 L4　D. 定速巡航</div>
+      <details><summary>查看答案</summary><div class="ans">C。L0–L2 的官方名称是"驾驶辅助"，驾驶责任在人；狭义自动驾驶指 L3 及以上系统承担驾驶任务，其中 L4/L5 为完全意义上的自动驾驶。</div></details>
+    </div>
+    <div class="quiz-item">
+      <div class="q">2.（判断）开启领航辅助驾驶后，驾驶员可以放心看手机，因为车在自己开。</div>
+      <details><summary>查看答案</summary><div class="ans">错误。目前量产的领航辅助均属 L2 级驾驶辅助，法规和厂商都要求驾驶员全程注视路况、随时准备接管，分心使用导致事故驾驶员仍负主要责任。</div></details>
+    </div>
+    <div class="quiz-item">
+      <div class="q">3.（单选）"长尾问题"指的是什么？</div>
+      <div class="opts">A. 车尾造型设计问题　B. 罕见但关键的极端路况场景　C. 高速公路收费站排队　D. 电池衰减</div>
+      <details><summary>查看答案</summary><div class="ans">B。长尾问题指绝大多数情况之外的罕见场景（如横穿高速的行人、异形障碍物），它们出现概率极低，却是自动驾驶安全设计的核心难点。</div></details>
+    </div>
+  </div>
+
+  <div class="next-box">
+    <h2>延伸阅读</h2>
+    <p>下一篇：<strong>L1-2 自动驾驶分级：L0–L5 各级的准确定义和代表功能</strong>——把本篇提到的"坡道"逐级拆开，看每一级的官方定义与代表功能。</p>
+    <ul>
+      <li>SAE International, <em>J3016: Taxonomy and Definitions for Terms Related to Driving Automation Systems for On-Road Motor Vehicles</em>（2021 年 4 月修订版）——分级的原始出处</li>
+      <li>工业和信息化部等四部门《关于开展智能网联汽车准入和上路通行试点工作的通知》（2023 年 11 月）——中国 L3 试点政策原文</li>
+    </ul>
+    <a class="next-link" href="L1-2.html">继续：L1-2 自动驾驶分级 →</a>
+  </div>
+
+  <div class="signoff">内容截至 2026-11，重要结论请以最新资料为准。</div>
+</main>
+</body>
+</html>
