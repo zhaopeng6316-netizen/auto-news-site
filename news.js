@@ -1,15 +1,33 @@
 // 由 update_news.ps1 自动生成，请勿手改
 window.AUTO_PULSE_NEWS = {
-    "updated":  "2026-11-20T00:44:42.8933508Z",
+    "updated":  "2026-11-23T00:46:44.9911183Z",
     "count":  45,
     "foreign_count":  22,
-    "featured_count":  1,
+    "featured_count":  3,
     "review_count":  0,
-    "dropped":  897,
+    "dropped":  811,
     "items":  [
                   {
-                      "summary":  "事关汽车召回，市场监管总局紧急提醒 \u0026nbsp;\u0026nbsp; 凤凰网",
+                      "summary":  "新款极狐阿尔法S5上市，11.58万起全系标配激光雷达 \u0026nbsp;\u0026nbsp; 盖世汽车社区",
                       "image":  "images/fallback_1.png",
+                      "reason":  "产品级，权威媒体，有新数据，聚焦新车",
+                      "lang":  "zh",
+                      "tier":  "library",
+                      "title":  "新款极狐阿尔法S5上市，11.58万起全系标配激光雷达 - 盖世汽车社区",
+                      "tags":  [
+                                   "激光雷达",
+                                   "上市"
+                               ],
+                      "category":  "新车",
+                      "source":  "盖世/车东西/42号车库/新出行/电动邦",
+                      "gradeCategory":  "新车",
+                      "link":  "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5wLUJCYWlwVU9TdVpldnBMR0hyelMwVklHbXIyMmQ5WThxNTRreFROVVBrMktDTjNPT2o1YjJxOE45TWV2QlpZLXZ0ck9fbzNj?oc=5",
+                      "date":  "2026-11-16",
+                      "score":  3
+                  },
+                  {
+                      "summary":  "事关汽车召回，市场监管总局紧急提醒 \u0026nbsp;\u0026nbsp; 凤凰网",
+                      "image":  "images/fallback_2.png",
                       "reason":  "行业级，官方发布，有新角度，聚焦政策",
                       "lang":  "zh",
                       "tier":  "library",
@@ -25,129 +43,161 @@ window.AUTO_PULSE_NEWS = {
                       "score":  3
                   },
                   {
-                      "summary":  "IT之家 11 月 19 日消息，在今晚的比亚迪方程豹钛 9 车型上市发布会上，官方宣布， 方程豹钛 9 首搭比亚迪折叠智舱上市 。 比亚迪官方表示，这是比亚迪全栈自研、全球首搭量产的 2026 年度",
-                      "image":  "images/da35799aeb63.jpg",
-                      "reason":  "行业级，媒体报道，有新数据，聚焦新车",
-                      "lang":  "zh",
-                      "tier":  "library",
-                      "title":  "方向盘也能折！方程豹钛 9 搭载比亚迪折叠智舱上市，全栈自研、全球首搭量产",
-                      "tags":  [
-                                   "比亚迪",
-                                   "上市"
-                               ],
-                      "category":  "新车",
-                      "source":  "IT之家",
-                      "gradeCategory":  "新车",
-                      "link":  "https://www.ithome.com/1/029/679.htm",
-                      "date":  "2026-11-19",
-                      "score":  3
-                  },
-                  {
-                      "summary":  "奔驰冻结德国本土投资， 拟关闭部分生产基地 \u0026nbsp;\u0026nbsp; 盖世汽车",
+                      "summary":  "【图】江西五十铃全新皮卡预售13.28万起 搭载3.0T柴油发动机 \u0026nbsp;\u0026nbsp; 汽车之家",
                       "image":  "images/fallback_3.png",
-                      "reason":  "企业级，权威媒体，有新角度，聚焦其他",
-                      "lang":  "zh",
-                      "tier":  "library",
-                      "title":  "奔驰冻结德国本土投资， 拟关闭部分生产基地 - 盖世汽车",
-                      "tags":  [
-                                   "其他"
-                               ],
-                      "category":  "行业",
-                      "source":  "盖世/车东西/42号车库/新出行/电动邦",
-                      "gradeCategory":  "其他",
-                      "link":  "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9PYkJweWVmYkI4dG8zaTBBVlhUOEstUDBSMFRaXy1URTRsLW5WcTVPWTNOa1NsUEdhbVUtQjBqNkNkbFlHQmNKLWk1TDRiRnU2?oc=5",
-                      "date":  "2026-11-13",
-                      "score":  3
-                  },
-                  {
-                      "summary":  "德国整车产量维持高位，零部件供应商订单短缺与投资外移加剧 \u0026nbsp;\u0026nbsp; 虎嗅",
-                      "image":  "images/fallback_4.png",
-                      "reason":  "企业级，权威媒体，有新角度，聚焦其他",
-                      "lang":  "zh",
-                      "tier":  "library",
-                      "title":  "德国整车产量维持高位，零部件供应商订单短缺与投资外移加剧 - 虎嗅",
-                      "tags":  [
-                                   "其他"
-                               ],
-                      "category":  "行业",
-                      "source":  "虎嗅/36氪/财新",
-                      "gradeCategory":  "其他",
-                      "link":  "https://news.google.com/rss/articles/CBMiVEFVX3lxTE56a2ZKSU1HUi1zZlY4TFd5eDR3TzJueTN6U3FPcVFCeUFOUHFBY1hWZ1hPYUJocTRHRUVuV3U5SzJ4RlpvU05kNkdMQmpxN0Z6Y0NRZg?oc=5",
-                      "date":  "2026-11-14",
-                      "score":  3
-                  },
-                  {
-                      "summary":  "【图】阿维塔06T Max先锋版将于11月25日上市 入门车型配置全面升级 \u0026nbsp;\u0026nbsp; 汽车之家",
-                      "image":  "images/fallback_5.png",
                       "reason":  "产品级，权威媒体，有新数据，聚焦新车",
                       "lang":  "zh",
                       "tier":  "library",
-                      "title":  "【图】阿维塔06T Max先锋版将于11月25日上市 入门车型配置全面升级 - 汽车之家",
+                      "title":  "【图】江西五十铃全新皮卡预售13.28万起 搭载3.0T柴油发动机 - 汽车之家",
                       "tags":  [
-                                   "上市"
+                                   "新车"
                                ],
                       "category":  "新车",
                       "source":  "第一财经/界面/汽车之家/易车",
                       "gradeCategory":  "新车",
-                      "link":  "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1qWW8yZFB1YTR3QnFoZ28tOXlZbFF2ZXdVeS0wSXB2UzI0OVdnZDJDSklLY3NvNXFGZm1TYUlqaVZkRE9VT01EaldOQ3lhcjI3WEJpOEZXSTFucFdNclc1TGJn?oc=5",
+                      "link":  "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9KajZGcXR4dkhhcGIzcmJhNEpwVUN0TnVRdTRYb01TR1FzamtOWDhMSHFreDNwN3BNQ0VCQ2s4YWRZTUZCMi1YN25xY3I5ZEhDMGUtVlRSV0NfejFpSGp5b21n?oc=5",
+                      "date":  "2026-11-21",
+                      "score":  3
+                  },
+                  {
+                      "summary":  "市场监管总局预警！汽车召回但凡要钱，全是骗子 \u0026nbsp;\u0026nbsp; 汽车之家",
+                      "image":  "images/fallback_4.png",
+                      "reason":  "行业级，官方发布，有新角度，聚焦政策",
+                      "lang":  "zh",
+                      "tier":  "library",
+                      "title":  "市场监管总局预警！汽车召回但凡要钱，全是骗子 - 汽车之家",
+                      "tags":  [
+                                   "召回"
+                               ],
+                      "category":  "行业",
+                      "source":  "工信部/中汽协/乘联会/市监总局",
+                      "gradeCategory":  "政策",
+                      "link":  "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1rYlotdnhoZE85Z2RDdEN6MHVoVDViY0hob0cyR1NlZWFnMHcwS09ZWTBaeHJyQW1VNldVdmJtRXRIZjhuaXlkYkdtTF9qQzBEaTR3ZzhMOThJVzA?oc=5",
                       "date":  "2026-11-19",
                       "score":  3
                   },
                   {
-                      "summary":  "德国整车产量维持高位，零部件供应商订单短缺与投资外移加剧 \u0026nbsp;\u0026nbsp; 虎嗅网",
-                      "image":  "images/fallback_6.png",
-                      "reason":  "企业级，权威媒体，有新角度，聚焦其他",
+                      "summary":  "IT之家 11 月 22 日消息，比亚迪腾势汽车今日发布了腾势 N8 快问快答第 1 期，公布了腾势 N8 预计交付周期。 纯电尊荣型：12 月中旬陆续开启交付 纯电旗舰型：11 月优先交付，深空蓝、",
+                      "image":  "images/cfa555536373.jpg",
+                      "reason":  "产品级，媒体报道，有新数据，聚焦新车",
                       "lang":  "zh",
                       "tier":  "library",
-                      "title":  "德国整车产量维持高位，零部件供应商订单短缺与投资外移加剧 - 虎嗅网",
+                      "title":  "比亚迪腾势 N8 预计交付周期公布：纯电旗舰型 11 月优先交付",
                       "tags":  [
-                                   "其他"
-                               ],
-                      "category":  "行业",
-                      "source":  "虎嗅/36氪/财新",
-                      "gradeCategory":  "其他",
-                      "link":  "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBfdFNndWdDWGRybWtjTVNrbG41dkdFaTQ3R0twV3Z0b3VvdVNGLU5OcUNPc2VIMlRnUmFxMXl2c1psS2hwRVduQm5iekh3NENXQ3c?oc=5",
-                      "date":  "2026-11-16",
-                      "score":  3
-                  },
-                  {
-                      "summary":  "IT之家 11 月 19 日消息，比亚迪方程豹钛 9 汽车今日正式上市。新车首发 DMS 超级混动全能平台，主打硬派外观，采用六座布局。全系标配天神之眼 B 辅助驾驶、云辇-A 车身控制，定义全维硬派",
-                      "image":  "images/b0bec73d5cdepng",
-                      "reason":  "产品级，媒体报道，全网首发，聚焦新车",
-                      "lang":  "zh",
-                      "tier":  "library",
-                      "title":  "27.99 万元起：比亚迪方程豹钛 9 上市，定位大六座方盒子",
-                      "tags":  [
-                                   "比亚迪",
-                                   "上市"
+                                   "比亚迪"
                                ],
                       "category":  "新车",
                       "source":  "IT之家",
                       "gradeCategory":  "新车",
-                      "link":  "https://www.ithome.com/1/029/684.htm",
-                      "date":  "2026-11-19",
+                      "link":  "https://www.ithome.com/1/030/685.htm",
+                      "date":  "2026-11-22",
                       "score":  3
                   },
                   {
-                      "summary":  "Rimac 已经拿到了大结果。 #欢迎关注爱范儿官方微信公众号：爱范儿（微信号：ifanr），更多精彩内容第一时间为您奉上。",
-                      "image":  "images/fallback_8.png",
-                      "reason":  "企业级，媒体报道，有新角度，聚焦其他",
+                      "summary":  "IT之家 11 月 22 日消息，据格隆汇报道，在零跑汽车 2026 年 Q3 业绩电话会上，零跑汽车副总裁李腾飞谈及与欧宝车型合作时称， 整体的 1 亿欧元 （现汇率约合 7.34 亿元人民币） 包",
+                      "image":  "images/a7d286236cc6.jpg",
+                      "reason":  "企业级，媒体报道，有新角度，聚焦新车",
                       "lang":  "zh",
                       "tier":  "library",
-                      "title":  "曾经的纯电超跑之王 Rimac Nevera 宣布停产，CEO 转头造出了 16 缸的布加迪新旗舰",
+                      "title":  "零跑李腾飞谈“与欧宝车型合作”：1 亿欧元含项目开发、授权使用费等，收入将持续多年",
+                      "tags":  [
+                                   "新车"
+                               ],
+                      "category":  "行业",
+                      "source":  "IT之家",
+                      "gradeCategory":  "新车",
+                      "link":  "https://www.ithome.com/1/030/694.htm",
+                      "date":  "2026-11-22",
+                      "score":  3
+                  },
+                  {
+                      "summary":  "市场监管总局发布提醒 警惕不法分子假借汽车召回实施诈骗 \u0026nbsp;\u0026nbsp; 新浪财经_金融信息服务商",
+                      "image":  "images/fallback_7.png",
+                      "reason":  "行业级，官方发布，有新数据，聚焦政策",
+                      "lang":  "zh",
+                      "tier":  "featured",
+                      "title":  "市场监管总局发布提醒 警惕不法分子假借汽车召回实施诈骗 - 新浪财经_金融信息服务商",
+                      "tags":  [
+                                   "召回"
+                               ],
+                      "category":  "新车",
+                      "source":  "工信部/中汽协/乘联会/市监总局",
+                      "gradeCategory":  "政策",
+                      "link":  "https://news.google.com/rss/articles/CBMimAFBVV95cUxPWXk3T3p1d1duVjh3SnFxa29qY2xPcHdTc0hYLWFaRldkLWJzbFBfVTBlOHBEYWpmaDdyRHNzWXJnQkxSZkI3emZZTnpGUjRjSTF6OWp1WE8yLUN1UlM2bktNbkY3cFBTa25RZ1VUSzc5NURZcERyTFJlZlp3eGYyUG1NNThlMjVzcExoTm1xOTVabzgwcl9FdQ?oc=5",
+                      "date":  "2026-11-18",
+                      "score":  4
+                  },
+                  {
+                      "summary":  "IT之家 11 月 22 日消息，贝尔金现已在京东上架新款 40W 单 USB-C 充电头，定价为 77 元。 京东 贝尔金 40W 充电头 77 元 直达链接 该产品采用柔和沙色配色，整体造型圆润，",
+                      "image":  "images/9e8340b79db3png",
+                      "reason":  "产品级，媒体报道，有新数据，聚焦新车",
+                      "lang":  "zh",
+                      "tier":  "library",
+                      "title":  "贝尔金推出新款 40W 单 USB-C 充电头：支持 PD 3.2/PPS 协议，77 元",
+                      "tags":  [
+                                   "充电"
+                               ],
+                      "category":  "新能源",
+                      "source":  "IT之家",
+                      "gradeCategory":  "新车",
+                      "link":  "https://www.ithome.com/1/030/700.htm",
+                      "date":  "2026-11-22",
+                      "score":  3
+                  },
+                  {
+                      "summary":  "Q3营收242.8亿！小鹏甩出最强财报，Q4目标直指318亿 \u0026nbsp;\u0026nbsp; 盖世汽车社区",
+                      "image":  "images/fallback_9.png",
+                      "reason":  "企业级，权威媒体，有新角度，聚焦企业",
+                      "lang":  "zh",
+                      "tier":  "library",
+                      "title":  "Q3营收242.8亿！小鹏甩出最强财报，Q4目标直指318亿 - 盖世汽车社区",
+                      "tags":  [
+                                   "小鹏"
+                               ],
+                      "category":  "行业",
+                      "source":  "盖世/车东西/42号车库/新出行/电动邦",
+                      "gradeCategory":  "企业",
+                      "link":  "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1QYUNjM0YxQXk1NjVMSkxCYjNZRXZQcTg2Yk0wS1pRWmYzV0dKR01oRk4xMjVxVk5iMS1nZHZROXp4bHo3ZUVwTUNMTFUyX1hR?oc=5",
+                      "date":  "2026-11-16",
+                      "score":  3
+                  },
+                  {
+                      "summary":  "小鹏服务及其他业务毛利贡献回落，车企通过技术、换电与海外合资合作拓展收入 \u0026nbsp;\u0026nbsp; 虎嗅网",
+                      "image":  "images/fallback_10.png",
+                      "reason":  "企业级，权威媒体，有新角度，聚焦技术",
+                      "lang":  "zh",
+                      "tier":  "library",
+                      "title":  "小鹏服务及其他业务毛利贡献回落，车企通过技术、换电与海外合资合作拓展收入 - 虎嗅网",
+                      "tags":  [
+                                   "小鹏"
+                               ],
+                      "category":  "技术",
+                      "source":  "虎嗅/36氪/财新",
+                      "gradeCategory":  "技术",
+                      "link":  "https://news.google.com/rss/articles/CBMiVEFVX3lxTE81cGFpMkdCbEZrcWVuM1ZIZ0RsR2ptWGhFVkw4bFVqYUNXU1ZhYTRnTmdCY2ZMc1JndW5FNEY0SURDb0hoZ1Fna09uZVgySHlyNnphVA?oc=5",
+                      "date":  "2026-11-20",
+                      "score":  3
+                  },
+                  {
+                      "summary":  "【图】基本延续概念车设计 日产Terrano量产版谍照曝光 非承载式车身 \u0026nbsp;\u0026nbsp; 汽车之家",
+                      "image":  "images/fallback_11.png",
+                      "reason":  "行业级，权威媒体，有新数据，聚焦其他",
+                      "lang":  "zh",
+                      "tier":  "featured",
+                      "title":  "【图】基本延续概念车设计 日产Terrano量产版谍照曝光 非承载式车身 - 汽车之家",
                       "tags":  [
                                    "其他"
                                ],
-                      "category":  "新能源",
-                      "source":  "爱范儿",
+                      "category":  "行业",
+                      "source":  "第一财经/界面/汽车之家/易车",
                       "gradeCategory":  "其他",
-                      "link":  "https://www.ifanr.com/1690064?utm_source=rss\u0026utm_medium=rss\u0026utm_campaign=",
-                      "date":  "2026-11-18",
-                      "score":  3
+                      "link":  "https://news.google.com/rss/articles/CBMiYkFVX3lxTE10cHBMTk5NQW0yWC1xbGFlVWF2YWRQNHR4X05MZ2FhLXUyRUlQamt5eDRWRE1VcGU3QnQxWXgtd1RrZ242aEpZVmYzV1ozMlBmUUZZMkpMRnoyeGt6NkYzZldn?oc=5",
+                      "date":  "2026-11-21",
+                      "score":  4
                   },
                   {
                       "summary":  "“汽车召回”也有假？市场监管总局：车企对车辆召回均免费 \u0026nbsp;\u0026nbsp; 汽车之家",
-                      "image":  "images/fallback_9.png",
+                      "image":  "images/fallback_12.png",
                       "reason":  "行业级，官方发布，有新角度，聚焦政策",
                       "lang":  "zh",
                       "tier":  "library",
@@ -163,315 +213,198 @@ window.AUTO_PULSE_NEWS = {
                       "score":  3
                   },
                   {
-                      "summary":  "【图】鸿蒙智行全新家庭MPV！享界V8将于11月20日上市 预售价32.98万起 \u0026nbsp;\u0026nbsp; 汽车之家",
-                      "image":  "images/fallback_10.png",
-                      "reason":  "产品级，权威媒体，有新数据，聚焦新车",
-                      "lang":  "zh",
-                      "tier":  "library",
-                      "title":  "【图】鸿蒙智行全新家庭MPV！享界V8将于11月20日上市 预售价32.98万起 - 汽车之家",
-                      "tags":  [
-                                   "上市"
-                               ],
-                      "category":  "新车",
-                      "source":  "第一财经/界面/汽车之家/易车",
-                      "gradeCategory":  "新车",
-                      "link":  "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1vUUJRalFEWnpvQ3NkQjgyUjhEOThvRGtuZ25kRXZtcWxobUpnWndpcFp1SmRjTDBlSEcwNElickpLUFlDZk1VMEpwUm5abnFWb0o2V2E0WWdjbW84X0MyeTdn?oc=5",
-                      "date":  "2026-11-18",
-                      "score":  3
-                  },
-                  {
-                      "summary":  "2027款全新领克03家族正式上市， 中国性能轿车进入宽体时代 \u0026nbsp;\u0026nbsp; 盖世汽车",
-                      "image":  "images/fallback_11.png",
-                      "reason":  "产品级，权威媒体，有新数据，聚焦新车",
-                      "lang":  "zh",
-                      "tier":  "library",
-                      "title":  "2027款全新领克03家族正式上市， 中国性能轿车进入宽体时代 - 盖世汽车",
-                      "tags":  [
-                                   "上市"
-                               ],
-                      "category":  "新车",
-                      "source":  "盖世/车东西/42号车库/新出行/电动邦",
-                      "gradeCategory":  "新车",
-                      "link":  "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5EQl9yU2RIdTdiX0Nmdjl3bFBGOHpKWlBmTWFBdU14OWstaHlkTEhBUUpudEVmX09acmFaWmJyWUNhRkl0WDlEUXB5NkVlQlhn?oc=5",
-                      "date":  "2026-11-13",
-                      "score":  3
-                  },
-                  {
-                      "summary":  "车展首次联动补贴专场：现场下单前先算三笔账 \u0026nbsp;\u0026nbsp; 汽车之家",
-                      "image":  "images/fallback_12.png",
-                      "reason":  "行业级，权威媒体，全网首发，聚焦政策",
-                      "lang":  "zh",
-                      "tier":  "featured",
-                      "title":  "车展首次联动补贴专场：现场下单前先算三笔账 - 汽车之家",
-                      "tags":  [
-                                   "政策"
-                               ],
-                      "category":  "行业",
-                      "source":  "第一财经/界面/汽车之家/易车",
-                      "gradeCategory":  "政策",
-                      "link":  "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9UNDZ2RXlMQm9MaktNdER5eEFvSkpETmQzbVFId2t4TDZmU2JoV1NSd09hU1JtNUhKOTMxTHJkQWJHZW5yeVRjd2FXbDhMNlZMSVFvd05RUnRybFE?oc=5",
-                      "date":  "2026-11-19",
-                      "score":  4
-                  },
-                  {
-                      "summary":  "全新领克03家族正式上市， 推出多项赛级配置 \u0026nbsp;\u0026nbsp; 盖世汽车",
-                      "image":  "images/fallback_13.png",
-                      "reason":  "产品级，权威媒体，有新数据，聚焦新车",
-                      "lang":  "zh",
-                      "tier":  "library",
-                      "title":  "全新领克03家族正式上市， 推出多项赛级配置 - 盖世汽车",
-                      "tags":  [
-                                   "上市"
-                               ],
-                      "category":  "新车",
-                      "source":  "盖世/车东西/42号车库/新出行/电动邦",
-                      "gradeCategory":  "新车",
-                      "link":  "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1LcERJNDZLNUhENU4zQjlXVGNuU2ZwVHlheVlpNDlvOVZiRnpqQmk3d1NFbEdSbEktdGpzZU1nZTR1RnJRYnNtQ2xHUWdfMF9D?oc=5",
-                      "date":  "2026-11-13",
-                      "score":  3
-                  },
-                  {
-                      "summary":  "IT之家 11 月 19 日消息，随着《GTA 6》正式开启全球发售，不少玩家和业内人士又提出了一个老问题：R 星为何至今不肯在游戏中使用真实的汽车品牌和车型？ 《GTA 5》发售前三天就赚了 10 ",
-                      "image":  "images/57dcfd7ce1cepng",
+                      "summary":  "IT之家 11 月 23 日消息，郑州市消防救援支队于 11 月 20 日晚发布了《郑州市惠济区和昌珑悦小区“7·6”较大火灾事故调查报告》。 郑州市人民政府事故调查组认定，这起造成 5 人死亡、1 ",
+                      "image":  "images/dd4e51babb77png",
                       "reason":  "产品级，媒体报道，有新数据，聚焦新车",
                       "lang":  "zh",
                       "tier":  "library",
-                      "title":  "R 星联合创始人谈《GTA》系列为何不用真实车型：授权成本、创作自由等因素",
+                      "title":  "郑州“7·6”火灾调查报告公布：非法改装电摩入户充电，锂电池爆燃引发事故致 5 人死亡",
                       "tags":  [
-                                   "新车"
-                               ],
-                      "category":  "行业",
-                      "source":  "IT之家",
-                      "gradeCategory":  "新车",
-                      "link":  "https://www.ithome.com/1/029/701.htm",
-                      "date":  "2026-11-19",
-                      "score":  3
-                  },
-                  {
-                      "summary":  "上汽奥迪推出两款特别版车型 \u0026nbsp;\u0026nbsp; 盖世汽车",
-                      "image":  "images/fallback_15.png",
-                      "reason":  "产品级，权威媒体，有新数据，聚焦新车",
-                      "lang":  "zh",
-                      "tier":  "library",
-                      "title":  "上汽奥迪推出两款特别版车型 - 盖世汽车",
-                      "tags":  [
-                                   "新车"
-                               ],
-                      "category":  "行业",
-                      "source":  "盖世/车东西/42号车库/新出行/电动邦",
-                      "gradeCategory":  "新车",
-                      "link":  "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5ickRxN1dLeHFSdF9yZW5PVUpaMl9IRzIxX1NHb052ZjRFMWxVVUVERkVHWGpDVTRWc2dTSElTck9yS2s4UXoxZ0h2Y3ZHNzJE?oc=5",
-                      "date":  "2026-11-16",
-                      "score":  3
-                  },
-                  {
-                      "summary":  "岚图汽车获独立生产准入资格，车型产品公告将不再依托东风体系 \u0026nbsp;\u0026nbsp; 凤凰网",
-                      "image":  "images/fallback_16.png",
-                      "reason":  "行业级，官方发布，有新角度，聚焦政策",
-                      "lang":  "zh",
-                      "tier":  "library",
-                      "title":  "岚图汽车获独立生产准入资格，车型产品公告将不再依托东风体系 - 凤凰网",
-                      "tags":  [
-                                   "政策"
-                               ],
-                      "category":  "行业",
-                      "source":  "工信部/中汽协/乘联会/市监总局",
-                      "gradeCategory":  "政策",
-                      "link":  "https://news.google.com/rss/articles/CBMiUkFVX3lxTE4zZHE1dnZFMGpER2tOcXlWeUktWmJ6VVNVbDhqVHJMY0h6OFF0bEQ1ekwzZVFYOWRJZ3hNbjdyTmVNSXJxMEpWWGQyVEhJTUpfZkE?oc=5",
-                      "date":  "2026-11-18",
-                      "score":  3
-                  },
-                  {
-                      "summary":  "工信部发布43项改装清单 行李架加装限30厘米 \u0026nbsp;\u0026nbsp; 汽车之家",
-                      "image":  "images/fallback_17.png",
-                      "reason":  "产品级，官方发布，有新数据，聚焦政策",
-                      "lang":  "zh",
-                      "tier":  "library",
-                      "title":  "工信部发布43项改装清单 行李架加装限30厘米 - 汽车之家",
-                      "tags":  [
-                                   "政策"
-                               ],
-                      "category":  "新车",
-                      "source":  "工信部/中汽协/乘联会/市监总局",
-                      "gradeCategory":  "政策",
-                      "link":  "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBvVGJueml5X2JpcFJScnp3STdMNkRTc21Sa0FJd2VLVGpZdVBlYmZrcW9WTEF6RzlFM0xUMENJdEtORjNBTnZveWpGM2ZsMDdzV2hvcFRQWVd1MHc?oc=5",
-                      "date":  "2026-11-17",
-                      "score":  3
-                  },
-                  {
-                      "summary":  "市场监管总局通报不法分子假借汽车召回名义实施网络诈骗 \u0026nbsp;\u0026nbsp; 网通社",
-                      "image":  "images/fallback_18.png",
-                      "reason":  "行业级，官方发布，有新角度，聚焦政策",
-                      "lang":  "zh",
-                      "tier":  "library",
-                      "title":  "市场监管总局通报不法分子假借汽车召回名义实施网络诈骗 - 网通社",
-                      "tags":  [
-                                   "召回"
-                               ],
-                      "category":  "行业",
-                      "source":  "工信部/中汽协/乘联会/市监总局",
-                      "gradeCategory":  "政策",
-                      "link":  "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1VZjFJclRpaGpxVU5jSU1Nd0FSZUtldDRhLXh2UmduRFVHNkozN3ZhNWl0X3lNUDlOb2s5ZGRrSHJwazlNUWFnbGZvTVlkUEJUTTRMY3NQNlhndW8?oc=5",
-                      "date":  "2026-11-17",
-                      "score":  3
-                  },
-                  {
-                      "summary":  "IT之家 11 月 19 日消息，今日 iCAR 旗下全新车型 V25 正式上市，新车共推出 4 款配置，官方指导价为 12.98 万 —15.98 万元，限时超级红包价 11.98 万 —14.98",
-                      "image":  "images/047c830c9212.jpg",
-                      "reason":  "产品级，媒体报道，有新数据，聚焦新车",
-                      "lang":  "zh",
-                      "tier":  "library",
-                      "title":  "iCAR V25 增程方盒子 SUV 上市，限时超级红包价 11.98 万元起",
-                      "tags":  [
-                                   "上市"
+                                   "充电",
+                                   "电池"
                                ],
                       "category":  "新车",
                       "source":  "IT之家",
                       "gradeCategory":  "新车",
-                      "link":  "https://www.ithome.com/1/029/675.htm",
-                      "date":  "2026-11-19",
+                      "link":  "https://www.ithome.com/1/030/721.htm",
+                      "date":  "2026-11-22",
                       "score":  3
                   },
                   {
-                      "summary":  "VAMA三期项目开工 总投资31.47亿元规划185 万吨产能 \u0026nbsp;\u0026nbsp; 盖世汽车",
-                      "image":  "images/fallback_20.png",
+                      "summary":  "马斯克等16.5万人联署公开信，呼吁英伟达重新任命黄仁勋为CEO \u0026nbsp;\u0026nbsp; 盖世汽车社区",
+                      "image":  "images/fallback_14.png",
                       "reason":  "企业级，权威媒体，有新角度，聚焦其他",
                       "lang":  "zh",
                       "tier":  "library",
-                      "title":  "VAMA三期项目开工 总投资31.47亿元规划185 万吨产能 - 盖世汽车",
+                      "title":  "马斯克等16.5万人联署公开信，呼吁英伟达重新任命黄仁勋为CEO - 盖世汽车社区",
                       "tags":  [
                                    "其他"
                                ],
                       "category":  "行业",
                       "source":  "盖世/车东西/42号车库/新出行/电动邦",
                       "gradeCategory":  "其他",
-                      "link":  "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9YZ0wwdkF4c1VtU01xeFFsQlU3OVRSSkRmaHlfVDRSWmhLM3F5MFd4b3FhMWE2SXgxak5uV2x5U0xKTlNrVnlOMnZTX3Vlc1lO?oc=5",
-                      "date":  "2026-11-13",
+                      "link":  "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5SZHJBNWZhOWpNdkp5RWR6SHZyNGZBdFdIeWdXQlBUTnJLOVFFRDBxbUk1Z0YtWGs1QTJMeENpVUNkVWRpYkhBNF9fTVJMUU9Q?oc=5",
+                      "date":  "2026-11-16",
                       "score":  3
                   },
                   {
-                      "summary":  "IT之家 11 月 20 日消息，据易车援引相关渠道消息，吉利星越 L PLUS 预计将于 12 月正式上市。该车已在 11 月 12 日开启预售，共推出 5 款车型，预售价区间 16.77-20.9",
-                      "image":  "images/2d3de8b3269a.jpg",
-                      "reason":  "产品级，媒体报道，有新数据，聚焦新车",
+                      "summary":  "“汽车召回”也有假？市场监管总局支招 \u0026nbsp;\u0026nbsp; 新湖南",
+                      "image":  "images/fallback_15.png",
+                      "reason":  "行业级，官方发布，有新角度，聚焦政策",
                       "lang":  "zh",
                       "tier":  "library",
-                      "title":  "吉利星越 L PLUS 预计 12 月上市，搭 2.0T 混动、Flyme Auto 座舱，预售 15.77 万元起",
+                      "title":  "“汽车召回”也有假？市场监管总局支招 - 新湖南",
                       "tags":  [
-                                   "吉利",
-                                   "上市"
+                                   "召回"
                                ],
-                      "category":  "新车",
-                      "source":  "IT之家",
-                      "gradeCategory":  "新车",
-                      "link":  "https://www.ithome.com/1/029/756.htm",
-                      "date":  "2026-11-19",
+                      "category":  "行业",
+                      "source":  "工信部/中汽协/乘联会/市监总局",
+                      "gradeCategory":  "政策",
+                      "link":  "https://news.google.com/rss/articles/CBMiX0FVX3lxTE0wS0taTlpidXNRZXR1TDlfaU1Sb0tuYmRiWTBrbTZrT3B0RnpoRGxTWFZVdVQwbWpxUjFXYlNvTDhzb3BRczRhOE1RYXh5c24xZkotMGpxQnE5bnFqS084?oc=5",
+                      "date":  "2026-11-17",
                       "score":  3
                   },
                   {
-                      "summary":  "【图】小号\"海豹08\"来了！比亚迪第二代海豹07官图 全新插混与纯电动力 \u0026nbsp;\u0026nbsp; 汽车之家",
-                      "image":  "images/fallback_22.png",
-                      "reason":  "产品级，权威媒体，有新角度，聚焦新车",
+                      "summary":  "IT之家 11 月 22 日消息，科技初创公司 Nomadic 本周展示了旗下的 NOMAD 无人机，同时宣布完成 600 万美元 （IT之家注：现汇率约合 4,016 万元人民币） 种子轮融资。这款",
+                      "image":  "images/2c3b025a560f.jpg",
+                      "reason":  "企业级，媒体报道，有新角度，聚焦技术",
                       "lang":  "zh",
                       "tier":  "library",
-                      "title":  "【图】小号\"海豹08\"来了！比亚迪第二代海豹07官图 全新插混与纯电动力 - 汽车之家",
+                      "title":  "Nomadic 无人机停高压电线上就能充电，每架可负责监测 25 公里电网线路",
                       "tags":  [
-                                   "比亚迪"
-                               ],
-                      "category":  "新车",
-                      "source":  "第一财经/界面/汽车之家/易车",
-                      "gradeCategory":  "新车",
-                      "link":  "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1EaFRMckh6Nmk2cjNDVTlTNFFsVnhlQzR1RzdmVFp6U3A3MUFuRHYyRVQ0dnozdTducmhob0VXV3N2WXVHd3VTREpXS213cXlkT1FKOC12cUN1ZG9sa1lxeGxB?oc=5",
-                      "date":  "2026-11-13",
-                      "score":  3
-                  },
-                  {
-                      "summary":  "欧盟与英国拟推迟电动车10%关税实施-36氪 \u0026nbsp;\u0026nbsp; 36kr",
-                      "image":  "images/fallback_23.png",
-                      "reason":  "行业级，权威媒体，有新角度，聚焦政策",
-                      "lang":  "zh",
-                      "tier":  "library",
-                      "title":  "欧盟与英国拟推迟电动车10%关税实施-36氪 - 36kr",
-                      "tags":  [
-                                   "政策"
+                                   "充电"
                                ],
                       "category":  "新能源",
-                      "source":  "虎嗅/36氪/财新",
-                      "gradeCategory":  "政策",
-                      "link":  "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9JdHhGRklxTmFFTC1WMDQ4cV9jQnZjMlhxWkhEZWppcU00bjZYRl9EUkJyOUdoX1RkUTZDNjBaS0UtanN3WU9CRTFSclZHZ1dBQmI5cUxUeks?oc=5",
-                      "date":  "2026-11-11",
+                      "source":  "IT之家",
+                      "gradeCategory":  "技术",
+                      "link":  "https://www.ithome.com/1/030/708.htm",
+                      "date":  "2026-11-22",
                       "score":  3
                   },
                   {
-                      "summary":  "The revived nameplate is expected to debut in Thailand next month as Honda prepares a major expansio",
-                      "image":  "images/fallback_24.png",
-                      "reason":  "产品级，媒体报道，全网首发，聚焦新车",
-                      "lang":  "en",
+                      "summary":  "【图】东风风行小菱智/菱智大V/2027款菱智首发 菱智新能源限时7.98万起 \u0026nbsp;\u0026nbsp; 汽车之家",
+                      "image":  "images/fallback_17.png",
+                      "reason":  "产品级，权威媒体，全网首发，聚焦新车",
+                      "lang":  "zh",
                       "tier":  "library",
-                      "title":  "Honda Just Teased a New Hybrid SUV Called the Avancier",
+                      "title":  "【图】东风风行小菱智/菱智大V/2027款菱智首发 菱智新能源限时7.98万起 - 汽车之家",
                       "tags":  [
                                    "新车"
                                ],
                       "category":  "新车",
-                      "source":  "Car and Driver",
+                      "source":  "第一财经/界面/汽车之家/易车",
                       "gradeCategory":  "新车",
-                      "link":  "https://www.caranddriver.com/news/a74415525/honda-teased-new-hybrid-suv-avancier/",
-                      "date":  "2026-11-12",
+                      "link":  "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9pYjBCcFNSWTJsTGhDUWdMdjdXLVN4SlBwbFRBeW9TVk1oZEc5SlZRZnVlbE4zZGhJQnJVVFdoelItT0E1TFRjWl93SGFwS0NEb19Xa2RIRHBMRTJzRTZJeEJB?oc=5",
+                      "date":  "2026-11-16",
                       "score":  3
                   },
                   {
-                      "summary":  "FY 2027 Transportation Proposal Puts EV Charging Investments at Risk WASHINGTON, D.C. — On Monday, S",
-                      "image":  "images/fallback_25.png",
-                      "reason":  "企业级，媒体报道，有新数据，聚焦技术",
-                      "lang":  "en",
+                      "summary":  "【图】将于11月24日开启预售/搭1.5T插混系统 吉利银河M8正式亮相 \u0026nbsp;\u0026nbsp; 汽车之家",
+                      "image":  "images/fallback_18.png",
+                      "reason":  "产品级，权威媒体，有新数据，聚焦新车",
+                      "lang":  "zh",
                       "tier":  "library",
-                      "title":  "Senate Republicans Seek to Again Raid States’ Coffers \u0026 Threaten EV Charging",
+                      "title":  "【图】将于11月24日开启预售/搭1.5T插混系统 吉利银河M8正式亮相 - 汽车之家",
                       "tags":  [
-                                   "技术"
+                                   "吉利"
                                ],
-                      "category":  "新能源",
-                      "source":  "CleanTechnica",
-                      "gradeCategory":  "技术",
-                      "link":  "https://cleantechnica.com/2026/11/17/senate-republicans-seek-to-again-raid-states-coffers-threaten-ev-charging/",
-                      "date":  "2026-11-18",
+                      "category":  "新车",
+                      "source":  "第一财经/界面/汽车之家/易车",
+                      "gradeCategory":  "新车",
+                      "link":  "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBDNnh6OW9vV1dXbzM3WFprcFlHUHNzeGV6bzE0dlpQaEdqWUhkdU5zUTl4U2tGS0YwWFlIZUdMWThGM0pvRFgyNFoyZlBfZng4SkQ3MmI1U2V3TFRUemkwSlJ3?oc=5",
+                      "date":  "2026-11-22",
                       "score":  3
                   },
                   {
-                      "summary":  "Scout CEO Scott Keogh told The Drive the promised pricing is holding through a tariff storm, and tha",
-                      "image":  "images/938b939d5df1.jpg",
-                      "reason":  "行业级，媒体报道，有新角度，聚焦政策",
-                      "lang":  "en",
+                      "summary":  "捷途环游者EV全球预售，旅行者7 C-DM华为乾崑智驾版上市 \u0026nbsp;\u0026nbsp; 盖世汽车社区",
+                      "image":  "images/fallback_19.png",
+                      "reason":  "产品级，权威媒体，有新数据，聚焦新车",
+                      "lang":  "zh",
                       "tier":  "library",
-                      "title":  "Scout’s Traveler SUV Will Cost Less Than $60K. Even Loaded, It Won’t Touch Six Figures",
+                      "title":  "捷途环游者EV全球预售，旅行者7 C-DM华为乾崑智驾版上市 - 盖世汽车社区",
+                      "tags":  [
+                                   "华为",
+                                   "上市",
+                                   "智驾"
+                               ],
+                      "category":  "新车",
+                      "source":  "盖世/车东西/42号车库/新出行/电动邦",
+                      "gradeCategory":  "新车",
+                      "link":  "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5mRmpjS1doZjhHNWxxOHlNakxicy0wLXFKN3Jxc29Ga0F3MFBUMWlPWm5admJvSFpfakdJSzNIaUdIN3dCLXpHOW1FSVRhbC1Q?oc=5",
+                      "date":  "2026-11-16",
+                      "score":  3
+                  },
+                  {
+                      "summary":  "【 手小慎拍 ，此款适合大多数男性手掌握持。】 罗技 Logitech MX Master 3s \u0026nbsp;Lite（国行称为菁英版）在去年 10 月上市，官方定价 699 元。 今日京东 PLUS",
+                      "image":  "images/caebf94ca7bbpng",
+                      "reason":  "行业级，媒体报道，有新数据，聚焦政策",
+                      "lang":  "zh",
+                      "tier":  "library",
+                      "title":  "699 → 278 元办公人用过就回不去了：罗技 MX Master 3S Lite 鼠标政府补贴大破价",
                       "tags":  [
                                    "政策"
                                ],
-                      "category":  "新能源",
-                      "source":  "The Drive",
+                      "category":  "新车",
+                      "source":  "IT之家",
                       "gradeCategory":  "政策",
-                      "link":  "https://www.thedrive.com/news/scouts-traveler-suv-will-cost-less-than-60k-even-loaded-it-wont-touch-six-figures",
-                      "date":  "2026-11-18",
+                      "link":  "https://www.ithome.com/1/030/701.htm",
+                      "date":  "2026-11-22",
                       "score":  3
                   },
                   {
-                      "summary":  "Valeo 48V 2-Speed eAxle Wins PACE Innovation Partnership Award \u0026nbsp;\u0026nbsp; The EV Report",
-                      "image":  "images/fallback_27.png",
-                      "reason":  "企业级，权威媒体，有新角度，聚焦企业",
-                      "lang":  "en",
-                      "tier":  "library",
-                      "title":  "Valeo 48V 2-Speed eAxle Wins PACE Innovation Partnership Award - The EV Report",
+                      "summary":  "极狐贝塔S3激光换电版上市，限时补贴价7.88万元 \u0026nbsp;\u0026nbsp; 盖世汽车社区",
+                      "image":  "images/fallback_21.png",
+                      "reason":  "行业级，权威媒体，有新数据，聚焦政策",
+                      "lang":  "zh",
+                      "tier":  "featured",
+                      "title":  "极狐贝塔S3激光换电版上市，限时补贴价7.88万元 - 盖世汽车社区",
                       "tags":  [
-                                   "企业"
+                                   "上市"
                                ],
-                      "category":  "新能源",
-                      "source":  "Reuters/Bloomberg/Automotive News",
-                      "gradeCategory":  "企业",
-                      "link":  "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOUGVVbm9tVVNESFBGV1B6OThubzR2UnpjU0FxMjJPdEV6UUZvXzlFdVdfMU9kRHNHMnVfU1N1dGVwMnhXc2xJbEZ0cW9ZbmZYTHMyMTdKM2VwN2cwRG1yRGMzalpQX2plWUFDWlU2LUdGYVByX3ZSQUl1WGUxbUlJMU1wVV83cFBS?oc=5",
-                      "date":  "2026-11-19",
+                      "category":  "新车",
+                      "source":  "盖世/车东西/42号车库/新出行/电动邦",
+                      "gradeCategory":  "政策",
+                      "link":  "https://news.google.com/rss/articles/CBMiUEFVX3lxTFA1SHdCTGtmN2p1S3VibWVUTkNyLWN2WF9JT1NEYWc4N3JFZ1JpUU50VTZCZmp4Y3VMNi1LZjJORGpBbnVmT21Da2hPNS1CeUZS?oc=5",
+                      "date":  "2026-11-16",
+                      "score":  4
+                  },
+                  {
+                      "summary":  "工信部再提加速车企供应链付款 汽车行业连环债待解｜刘言 \u0026nbsp;\u0026nbsp; 星島頭條",
+                      "image":  "images/fallback_22.png",
+                      "reason":  "行业级，官方发布，有新角度，聚焦政策",
+                      "lang":  "zh",
+                      "tier":  "library",
+                      "title":  "工信部再提加速车企供应链付款 汽车行业连环债待解｜刘言 - 星島頭條",
+                      "tags":  [
+                                   "政策"
+                               ],
+                      "category":  "行业",
+                      "source":  "工信部/中汽协/乘联会/市监总局",
+                      "gradeCategory":  "政策",
+                      "link":  "https://news.google.com/rss/articles/CBMimgNBVV95cUxQNC1rTGg2cUdldFVDdDBRZ2d2MTBJTE9ablNGeS10T2kwSVphcnJRbWpyT2o2VGViQXdrdzlwTzVRZlNod0ZMcXF3OWlQX182ME9oVFJGNHVnWkROVTlMRG1tMDFvQnA2dXc2a05hWW9HS09IblpER3o5RTJyTldZNm81OHd4eDJTSXZfaXpMUmFrQlYtU0IzMTFLdkRrd3lSNVA2WXdqajJsazVDYzRqU3I5OV9vWmV5Umd5d3dmSTdmZDk2ZDV2d2RjWXA0b1FKWGkxUUhJeWRwSzBoZkxTSFRZWE4xb21uYnU3UHhETlRfdWcydVlyUzRKVjBTcVV1TlF3M1FVRXVVdFlPREIxVldtMDQ5ZHVGZTFsc0JkQzVrT0t0bFJNOFJuOWlJLWwtTWhWdzRjaUpZclY2Vmh2M2xTWHVzdGpZWEVBdExJNGFMVjN4TDVRZURzVFBGeUNodWg5LTU5R3FZSFNaU3ZlQnoyQXRPUncxbW94ODgzZTFqYnhRVk5qTFNKcUJIRG51ckFpSWVrMGxNQQ?oc=5",
+                      "date":  "2026-11-21",
+                      "score":  3
+                  },
+                  {
+                      "summary":  "德国整车产量维持高位，零部件供应商订单短缺与投资外移加剧 \u0026nbsp;\u0026nbsp; 虎嗅网",
+                      "image":  "images/fallback_23.png",
+                      "reason":  "企业级，权威媒体，有新角度，聚焦其他",
+                      "lang":  "zh",
+                      "tier":  "library",
+                      "title":  "德国整车产量维持高位，零部件供应商订单短缺与投资外移加剧 - 虎嗅网",
+                      "tags":  [
+                                   "其他"
+                               ],
+                      "category":  "行业",
+                      "source":  "虎嗅/36氪/财新",
+                      "gradeCategory":  "其他",
+                      "link":  "https://news.google.com/rss/articles/CBMiVEFVX3lxTE56a2ZKSU1HUi1zZlY4TFd5eDR3TzJueTN6U3FPcVFCeUFOUHFBY1hWZ1hPYUJocTRHRUVuV3U5SzJ4RlpvU05kNkdMQmpxN0Z6Y0NRZg?oc=5",
+                      "date":  "2026-11-14",
                       "score":  3
                   },
                   {
                       "summary":  "The funding is designated to support the carmaker\u0027s operational readiness and long-term commercial v",
-                      "image":  "images/fallback_28.png",
+                      "image":  "images/fallback_24.png",
                       "reason":  "企业级，媒体报道，有新角度，聚焦其他",
                       "lang":  "en",
                       "tier":  "library",
@@ -487,112 +420,8 @@ window.AUTO_PULSE_NEWS = {
                       "score":  3
                   },
                   {
-                      "summary":  "This will be the next Texas city in which Tesla will launch robotaxis.",
-                      "image":  "images/fallback_29.png",
-                      "reason":  "产品级，媒体报道，有新数据，聚焦新车",
-                      "lang":  "en",
-                      "tier":  "library",
-                      "title":  "Tesla expands robotaxi service to San Antonio",
-                      "tags":  [
-                                   "Robotaxi",
-                                   "Tesla",
-                                   "NIO"
-                               ],
-                      "category":  "新车",
-                      "source":  "TechCrunch",
-                      "gradeCategory":  "新车",
-                      "link":  "https://techcrunch.com/2026/11/09/tesla-expands-robotaxi-service-to-san-antonio/",
-                      "date":  "2026-11-09",
-                      "score":  3
-                  },
-                  {
-                      "summary":  "In little time, Ionna has transformed the EV charging landscape in the U.S. Now, it’s bringing many ",
-                      "image":  "images/517b8aef617d.jpg",
-                      "reason":  "企业级，媒体报道，有新角度，聚焦技术",
-                      "lang":  "en",
-                      "tier":  "library",
-                      "title":  "‘We’re Moving Really Fast’: Ionna CEO On 500 kW EV Chargers And Flagship New Location",
-                      "tags":  [
-                                   "技术"
-                               ],
-                      "category":  "新能源",
-                      "source":  "InsideEVs",
-                      "gradeCategory":  "技术",
-                      "link":  "https://insideevs.com/news/815457/ionna-500-kw-ev-chargers-are-coming/",
-                      "date":  "2026-11-18",
-                      "score":  3
-                  },
-                  {
-                      "summary":  "Canada’s government wants to make it easier for citizens to drive electric, and they’re putting more",
-                      "image":  "images/e2c2c789202a.jpg",
-                      "reason":  "企业级，媒体报道，有新角度，聚焦其他",
-                      "lang":  "en",
-                      "tier":  "library",
-                      "title":  "Latest Canadian budget packs funding for 55,000 new EV chargers",
-                      "tags":  [
-                                   "其他"
-                               ],
-                      "category":  "新能源",
-                      "source":  "Electrek",
-                      "gradeCategory":  "其他",
-                      "link":  "https://electrek.co/2026/11/12/latest-canadian-budget-packs-funding-for-55000-new-ev-chargers/",
-                      "date":  "2026-11-12",
-                      "score":  3
-                  },
-                  {
-                      "summary":  "Spy-shot angle: Spy photos reveal the redesigned BYD Han ahead of its expected November 27 debut, wi",
-                      "image":  "images/fallback_32.png",
-                      "reason":  "产品级，媒体报道，全网首发，聚焦新车",
-                      "lang":  "en",
-                      "tier":  "library",
-                      "title":  "New BYD Han exposed with 88.7 kWh battery, 875 km range and 697 hp",
-                      "tags":  [
-                                   "BYD"
-                               ],
-                      "category":  "新车",
-                      "source":  "CarNewsChina",
-                      "gradeCategory":  "新车",
-                      "link":  "https://carnewschina.com/2026/11/18/new-byd-han-exposed-with-88-7-kwh-battery-875-km-range-and-697-hp/",
-                      "date":  "2026-11-18",
-                      "score":  3
-                  },
-                  {
-                      "summary":  "The new smaller Mercedes-Benz G-Class will launch within the next 24 months as an EV and as a hybrid",
-                      "image":  "images/66cc33520301.jpg",
-                      "reason":  "产品级，媒体报道，有新数据，聚焦新车",
-                      "lang":  "en",
-                      "tier":  "library",
-                      "title":  "Mercedes-Benz \u0027Baby G\u0027 EV Spied In The Wild Growing Up",
-                      "tags":  [
-                                   "新车"
-                               ],
-                      "category":  "新车",
-                      "source":  "Carscoops",
-                      "gradeCategory":  "新车",
-                      "link":  "https://www.carscoops.com/2321294/mercedes-benz-baby-g-class-scoop/",
-                      "date":  "2026-11-18",
-                      "score":  3
-                  },
-                  {
-                      "summary":  "The new model switches to Huawei\u0027s 896-channel LiDAR and Qiankun ADS 5, with a limited-time promotio",
-                      "image":  "images/76b9e88813de.jpg",
-                      "reason":  "产品级，媒体报道，有新数据，聚焦新车",
-                      "lang":  "en",
-                      "tier":  "library",
-                      "title":  "Voyah launches 2027 Zhiyin SUV with upgraded Huawei driver-assistance hardware",
-                      "tags":  [
-                                   "新车"
-                               ],
-                      "category":  "新车",
-                      "source":  "CnEVPost",
-                      "gradeCategory":  "新车",
-                      "link":  "https://cnevpost.com/2026/11/13/voyah-launches-2027-zhiyin-suv/",
-                      "date":  "2026-11-13",
-                      "score":  3
-                  },
-                  {
                       "summary":  "The single-cab T4X will be joined later by a crew-cab T4C and an S4C SUV, all promising the same ble",
-                      "image":  "images/fallback_35.png",
+                      "image":  "images/fallback_25.png",
                       "reason":  "产品级，媒体报道，有新数据，聚焦新车",
                       "lang":  "en",
                       "tier":  "library",
@@ -608,36 +437,70 @@ window.AUTO_PULSE_NEWS = {
                       "score":  3
                   },
                   {
-                      "summary":  "Richmond, Virginia — Tomorrow, November 17, the Virginia State Corporation Commission (SCC) will beg",
-                      "image":  "images/fallback_36.png",
-                      "reason":  "企业级，媒体报道，有新数据，聚焦其他",
+                      "summary":  "JLR to launch electric Defender in 2027 as Evoque exits lineup \u0026nbsp;\u0026nbsp; Automotive News",
+                      "image":  "images/fallback_26.png",
+                      "reason":  "产品级，权威媒体，有新数据，聚焦新车",
                       "lang":  "en",
                       "tier":  "library",
-                      "title":  "As Hearings Begin, Sierra Club Virginia Calls for the SCC to Stop the Dominion NextEra Merger",
+                      "title":  "JLR to launch electric Defender in 2027 as Evoque exits lineup - Automotive News",
                       "tags":  [
-                                   "NIO"
+                                   "新车"
                                ],
-                      "category":  "行业",
-                      "source":  "CleanTechnica",
-                      "gradeCategory":  "其他",
-                      "link":  "https://cleantechnica.com/2026/11/16/as-hearings-begin-sierra-club-virginia-calls-for-the-scc-to-stop-the-dominion-nextera-merger/",
+                      "category":  "新车",
+                      "source":  "Reuters/Bloomberg/Automotive News",
+                      "gradeCategory":  "新车",
+                      "link":  "https://news.google.com/rss/articles/CBMihwFBVV95cUxNVGZwb2ZzTTRKTEU4d2ZXaGRMUlA3ZHNTQlZOZ3E0NXI2OXVPa1pMWE1yWHNpV21rOHg3Y3VFX0JJQnlOX0FyVEozMVFQSmcwQTVITjFfalZlOU9HOTV5UU85YjVXbTdaa2dkYnN3ZVVoRW9ra0dqU0lsbnNkc1JvOUNhUFNSdlU?oc=5",
                       "date":  "2026-11-17",
                       "score":  3
                   },
                   {
-                      "summary":  "Tesla to pull the plug on Cybertruck after years of poor sales \u0026nbsp;\u0026nbsp; The Standard (HK)",
-                      "image":  "images/fallback_37.png",
-                      "reason":  "行业级，权威媒体，有新角度，聚焦政策",
+                      "summary":  "Sometimes police need drivers to ignore normally posted laws and comply with officer instructions. T",
+                      "image":  "images/f3a5fe995cd4.jpg",
+                      "reason":  "企业级，媒体报道，有新角度，聚焦召回",
                       "lang":  "en",
                       "tier":  "library",
-                      "title":  "Tesla to pull the plug on Cybertruck after years of poor sales - The Standard (HK)",
+                      "title":  "Waymo Is Recalling Its Robotaxis Because They\u0027re Not Great At Dealing With Human Instructions",
                       "tags":  [
-                                   "Tesla"
+                                   "Robotaxi"
                                ],
                       "category":  "行业",
-                      "source":  "Reuters/Bloomberg/Automotive News",
-                      "gradeCategory":  "政策",
-                      "link":  "https://news.google.com/rss/articles/CBMitAFBVV95cUxNRE9xcjlFcDdWVTkwMzdtb096Z3loUkNxNlprM3hUVWhWdmtWMzhhNU5YQnNNWUFxdU9MYmxCei1mbFNsMGRXTEFQSUJ6ZTdNa21DVTFRakszSGxYbFpoVXktQ04tLXhHTjlkdVZfMGFiRXhqaURqMEpvU2xZdlhnbG56NEVfTzlKOXlrSnNjZjV1aE9SVHQyVEpPMC1yai1mcXdrdlpRY0JDXzY4YlNtZTZNZXU?oc=5",
+                      "source":  "InsideEVs",
+                      "gradeCategory":  "召回",
+                      "link":  "https://insideevs.com/news/816340/waymo-manually-controlled-intersection-recall/",
+                      "date":  "2026-11-21",
+                      "score":  3
+                  },
+                  {
+                      "summary":  "Lunar Energy has unveiled a 25-kW home DC fast charger that will do more than just power up your car",
+                      "image":  "images/ec5047d01bd3.jpg",
+                      "reason":  "产品级，媒体报道，全网首发，聚焦新车",
+                      "lang":  "en",
+                      "tier":  "library",
+                      "title":  "Lunar’s new home DC fast charger puts your EV battery to work",
+                      "tags":  [
+                                   "新车"
+                               ],
+                      "category":  "新车",
+                      "source":  "Electrek",
+                      "gradeCategory":  "新车",
+                      "link":  "https://electrek.co/2026/11/12/lunars-new-home-dc-fast-charger-puts-your-ev-battery-to-work/",
+                      "date":  "2026-11-12",
+                      "score":  3
+                  },
+                  {
+                      "summary":  "Launching at RE+ Las Vegas, November 17–20 \u0026#124; Visit Solar Insure at Booth C4190 Commercial prope",
+                      "image":  "images/fallback_29.png",
+                      "reason":  "产品级，媒体报道，有新数据，聚焦新车",
+                      "lang":  "en",
+                      "tier":  "library",
+                      "title":  "Solar Insure Launches 20-Year Commercial Battery Warranty, Expanding Protection for Solar \u0026 Storage Projects",
+                      "tags":  [
+                                   "新车"
+                               ],
+                      "category":  "新车",
+                      "source":  "CleanTechnica",
+                      "gradeCategory":  "新车",
+                      "link":  "https://cleantechnica.com/2026/11/18/solar-insure-launches-20-year-commercial-battery-warranty-expanding-protection-for-solar-storage-projects/",
                       "date":  "2026-11-18",
                       "score":  3
                   },
@@ -659,25 +522,214 @@ window.AUTO_PULSE_NEWS = {
                       "score":  3
                   },
                   {
-                      "summary":  "Genesis opened orders for the ultra-luxury electric SUV in South Korea, with prices starting at over",
-                      "image":  "images/feafb7724007.jpg",
+                      "summary":  "Hyundai is skipping the typical mid-cycle refresh and plans to launch a completely redesigned Kona, ",
+                      "image":  "images/1aa6e36d31ec.jpg",
                       "reason":  "产品级，媒体报道，有新数据，聚焦新车",
                       "lang":  "en",
                       "tier":  "library",
-                      "title":  "Genesis reveals GV90 prices start at $100K+ in Korea, but it will cost more for coach doors",
+                      "title":  "Hyundai is overhauling the Kona, and it looks like it may still be offered as an EV after all",
                       "tags":  [
                                    "新车"
                                ],
                       "category":  "新车",
                       "source":  "Electrek",
                       "gradeCategory":  "新车",
-                      "link":  "https://electrek.co/2026/11/11/genesis-reveals-gv90-prices-start-at-100k-korea-cost-more-for-coach-doors/",
-                      "date":  "2026-11-11",
+                      "link":  "https://electrek.co/2026/11/13/hyundai-overhauling-kona-ev/",
+                      "date":  "2026-11-13",
+                      "score":  3
+                  },
+                  {
+                      "summary":  "Stelato V8 hits the market: combining Huawei’s ADS 5.0 with L3-ready architecture. The post Stelato ",
+                      "image":  "images/fallback_32.png",
+                      "reason":  "产品级，媒体报道，有新数据，聚焦新车",
+                      "lang":  "en",
+                      "tier":  "library",
+                      "title":  "Stelato V8 launches in China, featuring Huawei’s smart driving and L3-ready autonomous architecture",
+                      "tags":  [
+                                   "新车"
+                               ],
+                      "category":  "新车",
+                      "source":  "CarNewsChina",
+                      "gradeCategory":  "新车",
+                      "link":  "https://carnewschina.com/2026/11/20/stelato-v8-launches-in-china-featuring-huaweis-smart-driving-and-l3-ready-autonomous-architecture/",
+                      "date":  "2026-11-20",
+                      "score":  3
+                  },
+                  {
+                      "summary":  "This will be the next Texas city in which Tesla will launch robotaxis.",
+                      "image":  "images/fallback_33.png",
+                      "reason":  "产品级，媒体报道，有新数据，聚焦新车",
+                      "lang":  "en",
+                      "tier":  "library",
+                      "title":  "Tesla expands robotaxi service to San Antonio",
+                      "tags":  [
+                                   "Robotaxi",
+                                   "Tesla",
+                                   "NIO"
+                               ],
+                      "category":  "新车",
+                      "source":  "TechCrunch",
+                      "gradeCategory":  "新车",
+                      "link":  "https://techcrunch.com/2026/11/09/tesla-expands-robotaxi-service-to-san-antonio/",
+                      "date":  "2026-11-09",
+                      "score":  3
+                  },
+                  {
+                      "summary":  "BYD doubled its cumulative sales in Japan from 5,000 to 10,000 units in about 15 months, significant",
+                      "image":  "images/b6e67b6737b3.jpg",
+                      "reason":  "产品级，媒体报道，有新角度，聚焦销量",
+                      "lang":  "en",
+                      "tier":  "library",
+                      "title":  "BYD hits 10,000 cumulative sales milestone in Japan as new models like Racco accelerate growth",
+                      "tags":  [
+                                   "BYD"
+                               ],
+                      "category":  "行业",
+                      "source":  "CnEVPost",
+                      "gradeCategory":  "销量",
+                      "link":  "https://cnevpost.com/2026/11/16/byd-10000-cumulative-sales-japan/",
+                      "date":  "2026-11-16",
+                      "score":  3
+                  },
+                  {
+                      "summary":  "Xiaomi bolsters European expansion with key hires from Xpeng. The post Xiaomi recruits former Xpeng ",
+                      "image":  "images/fallback_35.png",
+                      "reason":  "企业级，媒体报道，有新角度，聚焦其他",
+                      "lang":  "en",
+                      "tier":  "library",
+                      "title":  "Xiaomi recruits former Xpeng executives to lead European market entry",
+                      "tags":  [
+                                   "Xpeng"
+                               ],
+                      "category":  "行业",
+                      "source":  "CarNewsChina",
+                      "gradeCategory":  "其他",
+                      "link":  "https://carnewschina.com/2026/11/21/xiaomi-recruits-former-xpeng-executives-to-lead-european-market-entry/",
+                      "date":  "2026-11-21",
+                      "score":  3
+                  },
+                  {
+                      "summary":  "Elon Musk’s companies are moving faster than expected on a Tesla-SpaceX combination. A deal could be",
+                      "image":  "images/e3da30b7fa25.jpg",
+                      "reason":  "企业级，媒体报道，有新数据，聚焦其他",
+                      "lang":  "en",
+                      "tier":  "library",
+                      "title":  "SpaceX could announce $1.5 trillion Tesla merger in December: report",
+                      "tags":  [
+                                   "Tesla"
+                               ],
+                      "category":  "行业",
+                      "source":  "Electrek",
+                      "gradeCategory":  "其他",
+                      "link":  "https://electrek.co/2026/11/12/spacex-tesla-merger-announcement-december-report/",
+                      "date":  "2026-11-12",
+                      "score":  3
+                  },
+                  {
+                      "summary":  "The ID. AURA L5 is the second model in FAW-Volkswagen\u0027s ID. AURA lineup, following the T6 SUV launch",
+                      "image":  "images/9752d5adaa73.jpg",
+                      "reason":  "产品级，媒体报道，有新数据，聚焦新车",
+                      "lang":  "en",
+                      "tier":  "library",
+                      "title":  "FAW-VW opens reservations for ID. AURA L5 electric sedan with 580 km CLTC range",
+                      "tags":  [
+                                   "新车"
+                               ],
+                      "category":  "新车",
+                      "source":  "CnEVPost",
+                      "gradeCategory":  "新车",
+                      "link":  "https://cnevpost.com/2026/11/16/faw-vw-opens-reservations-id-aura-l5/",
+                      "date":  "2026-11-16",
+                      "score":  3
+                  },
+                  {
+                      "summary":  "Japan’s automakers will work together to lower production costs as they band together to compete aga",
+                      "image":  "images/fallback_38.png",
+                      "reason":  "行业级，媒体报道，有新角度，聚焦政策",
+                      "lang":  "en",
+                      "tier":  "library",
+                      "title":  "Toyota, Nissan, and Honda to Standardize Parts to Lower Costs",
+                      "tags":  [
+                                   "Toyota"
+                               ],
+                      "category":  "行业",
+                      "source":  "Car and Driver",
+                      "gradeCategory":  "政策",
+                      "link":  "https://www.caranddriver.com/news/a74490092/toyota-nissan-honda-standardize-parts-lower-costs/",
+                      "date":  "2026-11-20",
+                      "score":  3
+                  },
+                  {
+                      "summary":  "Rapid Growth in Energy Storage Is Helping Stabilize Electricity Prices and Strengthen Grid Reliabili",
+                      "image":  "images/fallback_39.png",
+                      "reason":  "产品级，媒体报道，有新角度，聚焦新车",
+                      "lang":  "en",
+                      "tier":  "library",
+                      "title":  "REPORT: U.S. Exceeds 200 GWh of Energy Storage Capacity Installed to Date",
+                      "tags":  [
+                                   "新车"
+                               ],
+                      "category":  "新能源",
+                      "source":  "CleanTechnica",
+                      "gradeCategory":  "新车",
+                      "link":  "https://cleantechnica.com/2026/11/17/report-u-s-exceeds-200-gwh-of-energy-storage-capacity-installed-to-date/",
+                      "date":  "2026-11-18",
+                      "score":  3
+                  },
+                  {
+                      "summary":  "UK\u0027s EU reset hits China EV speed bump \u0026nbsp;\u0026nbsp; The Standard (HK)",
+                      "image":  "images/fallback_40.png",
+                      "reason":  "行业级，权威媒体，有新角度，聚焦政策",
+                      "lang":  "en",
+                      "tier":  "library",
+                      "title":  "UK\u0027s EU reset hits China EV speed bump - The Standard (HK)",
+                      "tags":  [
+                                   "政策"
+                               ],
+                      "category":  "新能源",
+                      "source":  "Reuters/Bloomberg/Automotive News",
+                      "gradeCategory":  "政策",
+                      "link":  "https://news.google.com/rss/articles/CBMikwFBVV95cUxOd29QRG9icWg4VXhVQS1QNDdVWDRyYkdXN3VoZEwyb05VRTBxNk85RlFXSnBBclVISmdoa3dCUEtCZFFOQUNHTG1pOVVRU0xKNFJaN3d4YmhwNi0tUmZXS2tSSmY5NGcxQ3kyWTJ1UkJRS0RmRmc4MTdQaWV0WU1QYjhMVWFPd1Y3dThsQnpBSlY2M0U?oc=5",
+                      "date":  "2026-11-19",
+                      "score":  3
+                  },
+                  {
+                      "summary":  "The third-generation Tang SUV started pre-sales last week with a starting price of 225,000 yuan ($33",
+                      "image":  "images/3b10e520fe46.jpg",
+                      "reason":  "产品级，媒体报道，有新数据，聚焦销量",
+                      "lang":  "en",
+                      "tier":  "library",
+                      "title":  "BYD to launch third-gen Tang 5-seat electric SUV on November 24 with up to 850 km range",
+                      "tags":  [
+                                   "BYD"
+                               ],
+                      "category":  "新车",
+                      "source":  "CnEVPost",
+                      "gradeCategory":  "销量",
+                      "link":  "https://cnevpost.com/2026/11/16/byd-to-launch-3rd-gen-tang-nov-24/",
+                      "date":  "2026-11-16",
+                      "score":  3
+                  },
+                  {
+                      "summary":  "How does Chery manage DPF regeneration in a diesel PHEV? The Stockman uses a P1 generator, a 4-speed",
+                      "image":  "images/fallback_42.png",
+                      "reason":  "产品级，媒体报道，有新数据，聚焦新车",
+                      "lang":  "en",
+                      "tier":  "library",
+                      "title":  "Chery Stockman undercuts BYD Shark 6 as diesel PHEV patent reveals mechanical 4WD",
+                      "tags":  [
+                                   "BYD"
+                               ],
+                      "category":  "新车",
+                      "source":  "CarNewsChina",
+                      "gradeCategory":  "新车",
+                      "link":  "https://carnewschina.com/2026/11/20/chery-stockman-undercuts-byd-shark-6-as-diesel-phev-patent-reveals-mechanical-4wd/",
+                      "date":  "2026-11-20",
                       "score":  3
                   },
                   {
                       "summary":  "Uber Parking is the latest example of the company offering products beyond its core ride-hailing ser",
-                      "image":  "images/fallback_40.png",
+                      "image":  "images/fallback_43.png",
                       "reason":  "产品级，媒体报道，有新数据，聚焦新车",
                       "lang":  "en",
                       "tier":  "library",
@@ -693,88 +745,37 @@ window.AUTO_PULSE_NEWS = {
                       "score":  3
                   },
                   {
-                      "summary":  "And this is just the standard i3. Can you imagine what the electric M3 will be like?",
-                      "image":  "images/8a3e7c2e7450.jpg",
-                      "reason":  "行业级，媒体报道，有新角度，聚焦政策",
+                      "summary":  "The goliath automaker is said to be working with an outside executive search firm to prepare for the",
+                      "image":  "images/fallback_44.png",
+                      "reason":  "企业级，媒体报道，有新角度，聚焦其他",
                       "lang":  "en",
                       "tier":  "library",
-                      "title":  "The BMW i3 Has The Nurburgring Skills To Match Its Impressive Range",
+                      "title":  "General Motors Is Reportedly Preparing to Replace CEO Mary Barra",
                       "tags":  [
-                                   "BMW"
+                                   "其他"
                                ],
-                      "category":  "新能源",
-                      "source":  "InsideEVs",
-                      "gradeCategory":  "政策",
-                      "link":  "https://insideevs.com/news/815956/bmw-i3-50-nurburgring-video/",
+                      "category":  "行业",
+                      "source":  "Car and Driver",
+                      "gradeCategory":  "其他",
+                      "link":  "https://www.caranddriver.com/news/a74464769/general-motors-preparing-to-replace-ceo-mary-barra/",
                       "date":  "2026-11-18",
                       "score":  3
                   },
                   {
-                      "summary":  "Tesla’s “flying” Roadster just took a hit from Porsche. Speaking at a conference in Berlin today, CE",
-                      "image":  "images/db30de3a933f.jpg",
-                      "reason":  "企业级，媒体报道，有新角度，聚焦其他",
+                      "summary":  "Social leasing could soon change in scale, name, and business model. The bill introduced by MP Chris",
+                      "image":  "images/fallback_45.png",
+                      "reason":  "产品级，媒体报道，有新数据，聚焦其他",
                       "lang":  "en",
                       "tier":  "library",
-                      "title":  "Porsche CEO takes a shot at Tesla’s ‘flying’ Roadster stunt show",
+                      "title":  "From Social Leasing to Social Fleets: A Proposed Law Lends Credibility to the Goal of One Million Affordable Electric Cars",
                       "tags":  [
-                                   "Tesla"
+                                   "其他"
                                ],
-                      "category":  "行业",
-                      "source":  "Electrek",
+                      "category":  "新车",
+                      "source":  "CleanTechnica",
                       "gradeCategory":  "其他",
-                      "link":  "https://electrek.co/2026/11/11/porsche-ceo-tesla-flying-roadster-stunt/",
-                      "date":  "2026-11-11",
-                      "score":  3
-                  },
-                  {
-                      "summary":  "The updated 2027 model-year Zeekr 7X electric crossover will launch in China at the Guangzhou Auto S",
-                      "image":  "images/fallback_43.png",
-                      "reason":  "产品级，媒体报道，有新数据，聚焦新车",
-                      "lang":  "en",
-                      "tier":  "library",
-                      "title":  "Updated 2027 Zeekr 7X to enter China at Guangzhou Auto Show on November 27",
-                      "tags":  [
-                                   "新车"
-                               ],
-                      "category":  "新车",
-                      "source":  "CarNewsChina",
-                      "gradeCategory":  "新车",
-                      "link":  "https://carnewschina.com/2026/11/19/updated-2027-zeekr-7x-to-enter-china-at-guangzhou-auto-show-on-november-27/",
-                      "date":  "2026-11-19",
-                      "score":  3
-                  },
-                  {
-                      "summary":  "Hyundai\u0027s hardworking Porter pickup is finally getting a successor, and new spy shots reveal its big",
-                      "image":  "images/299f6e7dc390.jpg",
-                      "reason":  "产品级，媒体报道，有新数据，聚焦新车",
-                      "lang":  "en",
-                      "tier":  "library",
-                      "title":  "Hyundai\u0027s Porter Pickup Is Going Electric, And Making Fender-Benders Less Terrifying",
-                      "tags":  [
-                                   "新车"
-                               ],
-                      "category":  "新车",
-                      "source":  "Carscoops",
-                      "gradeCategory":  "新车",
-                      "link":  "https://www.carscoops.com/2321675/hyundai-porter-electric-pickup-making-crashes-less-terrifying/",
-                      "date":  "2026-11-19",
-                      "score":  3
-                  },
-                  {
-                      "summary":  "The 6-seat electric SUV went on sale on September 16, priced at 369,800 yuan ($55,070) in China. For",
-                      "image":  "images/a482dc829d3b.jpg",
-                      "reason":  "产品级，媒体报道，有新数据，聚焦销量",
-                      "lang":  "en",
-                      "tier":  "library",
-                      "title":  "Li Auto\u0027s 6-seat electric flagship i9 tops 10,000 deliveries less than 2 months after launch",
-                      "tags":  [
-                                   "Li Auto"
-                               ],
-                      "category":  "新车",
-                      "source":  "CnEVPost",
-                      "gradeCategory":  "销量",
-                      "link":  "https://cnevpost.com/2026/11/13/li-auto-i9-tops-10000-deliveries/",
-                      "date":  "2026-11-13",
+                      "link":  "https://cleantechnica.com/2026/11/18/from-social-leasing-to-social-fleets-a-proposed-law-lends-credibility-to-the-goal-of-one-million-affordable-electric-cars/",
+                      "date":  "2026-11-18",
                       "score":  3
                   }
               ]
