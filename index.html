@@ -1142,9 +1142,12 @@
       return s;
     };
     const sorted = data.items.slice().sort((a, b) => scoreOf(b) - scoreOf(a));
-    // 「重磅」= 服务端评分 4 分及以上（首页推荐）；5 分为待人工复核
-    const hotSet = new Set(sorted.filter((it) => typeof it.score === 'number' && it.score >= 4));
-    sorted.slice(0, 6).forEach((it) => hotSet.add(it));
+    // 页面端兜底过滤：负向词（手机/游戏/数码等非汽车内容）一律不上头条、不标重磅
+    const NEG = /手机|iPhone|iPad|游戏|GTA|显卡|GPU|笔记本|数码|平板|手表|耳机|Black Friday/i;
+    const headOk = (it) => it.tier !== 'review' && !NEG.test(it.title || '');
+    // 「重磅」= 服务端评分 4 分及以上（首页推荐）；5 分为待人工复核，不标重磅
+    const hotSet = new Set(sorted.filter((it) => headOk(it) && typeof it.score === 'number' && it.score >= 4));
+    sorted.slice(0, 6).filter(headOk).forEach((it) => hotSet.add(it));
 
     // ---------- 头条区：高分 + 有实拍图的 3 条（网格中不再重复） ----------
     // 多样性约束：同一来源、同一品牌/主题最多占 1 个头条位，防止一家媒体或一个品牌刷屏
@@ -1181,8 +1184,8 @@
     const headUsed = new Set();
     const headGrid = document.querySelector('.headline-grid');
     if (headGrid) {
-      const pool = sorted.filter(hasPhoto);
-      const top3 = pickTop(pool.length >= 3 ? pool : sorted, 3);
+      const pool = sorted.filter((it) => hasPhoto(it) && headOk(it));
+      const top3 = pickTop(pool.length >= 3 ? pool : sorted.filter(headOk), 3);
       top3.forEach((it) => { headUsed.add(it); hotSet.add(it); });   // 头条即最重要，全部标「重磅」
       const mkHead = (it, cls, nv, delay) => {
         const art = document.createElement('article');
